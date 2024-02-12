@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <title>Y4O4X0 1 gyak</title>
+    </head>
+    <body>
+        <h1>GitHub legfontosabb parancsai</h1>
+        <ol>
+           <li>
+                <strong>git init</strong>
+                <ul>
+                    <li>
+                       A git init parancs lehetőséget ad arra, hogy új repositoryt hozzunk létre. Általában ez az első parancs amit egy GitHub repository létrehozásakor használunk. A parancsban a létrehozandó repository nevét is megadhatjuk. <br>
+                       <b>Használata: git init / git init *repositoy név*.</b>
+                    </li>
+                </ul> 
+           </li>
+           <li>
+                <strong>git clone</strong>
+                <ul>
+                    <li>
+                        A git clone parancs egy local working copy-t lokális másolatot hozlétre a távoli könyvtárből (remote repository). Amikor egy könyvtárat klónozol akkor az abban levő fájlok, kódok autómatikusan letöltődnek a gépedre. Ez a parancs ad egy original location-t mint amilyen a távoli könyvtár , szóval húzhatsz le róla változtatásokat és fel is töltheted a változtatásaidat már hogyha van engedélyed hozzá. <br> 
+                    <b>Használata: git clone *git repo url* </b>
+                    </li>
+                </ul> 
+           </li>
+           <li>
+                <strong>git branch</strong>
+                <ul>
+                    <li>
+                        A git branch parancsal egy új ágat (branch) adhatunk amár meglevő águnkhoz, kiirja a már létező ágakat és törölhetünk is ágat. <br>
+                        <b>Használat: git branch *barnch név* / git branch -a / git branch --list / git branch -d *branch név*</b>
+                    </li>
+                </ul> 
+           </li>
+           <li>
+                <strong>git checkout</strong>
+                <ul>
+                    <li>
+                        Ezzel a parancsal át léphetünk egy másik ágra, vagy létrehozunk egyet és átlépünk abba. Ehez szükséges hogy a branch amibe át szeretnénk lépni létezzen a local repoba, illetve a jelenlegu branch-en levő változások commitolva vagy stash-elve kell legyen. <br>
+                        <b>Használata: git checkout *branch név* / git checkout -b *új branch név*</b>
+                    </li>
+                </ul> 
+           </li>
+           <li>
+                <strong>git add</strong>
+                <ul>
+                    <li>
+                        A git add parancs hozzá adja a változtatásokat a staging area-hoz amiben össze hasonlíthatod a lokális verziódat és azt a verziót ami a távoli könyvtárba van <br>
+                        <b>Használata: git add *file név 1* *file név 2* / git add -A</b>
+                    </li>
+                </ul> 
+           </li>
+           <li>
+                <strong>git commit</strong>
+                <ul>
+                    <li>
+                        A git commit parancs elmenti a változtatásokat a lokális könyvtáradba (local repository), ehez még hozzá kell adni egy rövid leírást, hogy milyen változtatások vannak benne. <br>
+                        <b>Használat: git commit -m 'commit-üzenet'</b>
+                    </li>
+                </ul> 
+           </li>
+           <li>
+                <strong>git push</strong>
+                <ul>
+                    <li>
+                        Ez a parancs feltolja (push) a commitált fájlok változtatásait a lokális repobol a távoli repoba , illetve csinál egy elnevezett branch-et a remote repoba ha még nem létezne. <br>
+                        <b>Használata: git push / git push *remote* *branch*</b>
+                    </li>
+                </ul> 
+           </li>
+           <li>
+                <strong>git pull</strong>
+                <ul>
+                    <li>
+                        A git pull le húzza a lokális repoba a legkésőbbi verziót ami a remote szerveren taláható<br>
+                        <b>Használat: git pull / git pull *remote* / git pull *remote* *branch név*</b>
+                    </li>
+                </ul> 
+           </li>
+           <li>
+                <strong>git merge</strong>
+                <ul>
+                    <li>
+                        A git merge parancs össze 'olvasztja' az branch-et a szülő branch-el. A azülő lehet development vagy master branch ez a munkafolyamattól függ. Automatikusan létre fog hozni egy comitot ha nincsen konflikt.<br>
+                        <b>Használat: git merge *branch név*</b>
+                    </li>
+                </ul> 
+           </li>
+           <li>
+                <strong>git status</strong>
+                <ul>
+                    <li>
+                        A git status kiirja az adott helyzetedet az adott repository-ba. <br>
+                        <b>Használat: git status</b>
+                    </li>
+                </ul> 
+           </li>
+        </ol>
 
+    </body>
+</html>
