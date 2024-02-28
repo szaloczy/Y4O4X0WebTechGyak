@@ -1,0 +1,23 @@
+body{
+    background-color: aqua;
+}
+.h1-format{
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#popularised{
+    font-style: italic;
+    color: green;
+}
+#lorem-style{
+    color: blue;
+}
+.class-style{
+    color: blue;
+}
+.other-font{
+    font-family: cursive;
+}
+p{
+    text-align: center;
+}
