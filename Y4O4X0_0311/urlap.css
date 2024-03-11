@@ -1,0 +1,15 @@
+.urlap{
+    background-color: aqua;
+    width:350px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #888888;
+}
+form, input{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+button{
+    margin: 15px;
+}
