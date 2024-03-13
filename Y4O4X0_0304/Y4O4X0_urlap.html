@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="urlap.css">
+</head>
+<body>
+    HTML5 űrlap - Y4O4X0
+    <div class="urlap">
+        <section>
+        <form target="_self" action="feldolgozo.oho" id="01" name="urlap" method="post">
+        
+            Név: <input type="text" id="nev" name="nev" placeholder="Írd be a neved" autofocus autocomplete="off" required pattern="[A-Za-z]{3}"> <br>
+            PIN kód:<input type="number" id="pin" name="pin" placeholder="Írd be a PIN kódot" autofocus autocomplete="off" required pattern="[0-9]+"><br>
+            Kedvenc gyümölcs: <input list="gyumolcs" id="myGyumolcs" name="myGyumolcs" type="text"> 
+            <datalist id="gyumolcs">
+                <option value="Dinnye">
+                    500Ft/kg
+                </option>
+                <option value="Körte">
+                    233Ft/kg
+                </option>
+                <option value="Barack">
+                    360Ft/kg
+                </option>
+                <option value="Szilva">
+                    100Ft/kg
+                </option>
+                <option value="Alma">
+                    250Ft/kg
+                </option>
+              </datalist> <br>
+              
+            Életkor: <input min="0" max="100" type="number" style="width: 50px;"><br>
+            
+            Lábméret:<input type="number" max="50" min="25" step="0.5"><br>
+            Önbizalom:0<input type="range" value="100" min="0" max="100" step="1" id="egyid" />100
+        </form>
+        </section>
+    
+    <button form="01" name="urlap">ELKÜLDÖM</button><button>Elküldöm ellenőrzés nélkül</button>
+</div>
+
+<div class="labjegyzet">
+<hr>
+<a target="_blank" href="https://html5doctor.com/">https://html5doctor.com/element-index/</a>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+table{
+    border: 1px solid black;
+    margin:auto;
+}
+td{
+    border: 1px solid black;
+    background-color: aqua;
+    width: 100px;
+    text-align: center;
+    height: 50px;
+}
+th{
+    background-color: aqua;
+    border: 1px solid black;
+    text-decoration: underline;
+}
+#webtech{
+    background-color: red;
+}
+#sweng{
+    background-color: blueviolet;
+}
+#java{
+    background-color: orange;
+}
+#db2{
+    background-color: palevioletred;
+}
+#numAnal{
+    background-color: green;
+}
+#bizved{
+    background-color: gray;
+}
+#eng{
+    background-color: lightseagreen;
+}
+#fiz{
+    background-color: brown;
+}
