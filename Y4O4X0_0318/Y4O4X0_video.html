@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <header></header>
+    <div class="video">
+    <video id="video1" width="400" controls>
+        <source src="video/Y4O4X0_video.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+      </video>
+
+      <button onclick="play()">Indítás</button>
+      <button onclick="pause()">Leállítás</button> 
+      <button onclick="playPause()">Indítás/Leállítás</button> <br>
+      <button onclick="mute()">néma</button>
+      <button onclick="quite()">halk</button>
+      <button onclick="verySlowRate()">nagyon lassú</button>
+      <button onclick="slowRate()">lassú</button>
+      <button onclick="normalRate()">normál</button>
+      <button onclick="faster()">gyorsabb</button>
+      <button onclick="veryFast()">nagyon gyors</button> <br>
+      <button onclick="small()">kicsi</button>
+      <button onclick="normalSize()">normál</button>
+      <button onclick="big()">nagy</button>
+      <button onclick="isFinished()">befejeződöt-e</button>
+      <button onclick="videoLength()">video hossza (mp)</button>
+      <button onclick="currentPosition()">jelenlegi pozíció</button>
+
+      <hr>
+      <hr>
+      <div>
+        <script src="video.js"></script>
+</body>
+</html>
