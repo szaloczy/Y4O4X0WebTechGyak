@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let datas = {
+            név : "Szalóczy Krisztián",
+            irányítószám : "2233",
+            város : "Miskolc",
+            egyetem : "Miskolci Egyetem"
+        };
+
+        let jsonText = JSON.stringify(datas);
+        console.log(jsonText);
+
+        document.write("<pre>" + jsonText + "</pre>");
+    </script>
+</body>
+</html>

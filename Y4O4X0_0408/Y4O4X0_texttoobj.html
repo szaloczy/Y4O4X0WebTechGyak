@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let jsonText = '{"név": "Szalóczy Krisztián", "irányítószám" : "2233", "város":"Nyékládháza", "egyetem":"Miskolci Egyetem"}'
+        let obj = JSON.parse(jsonText);
+
+        document.write("<pre>" + JSON.stringify(obj, null, 2) + "<pre>");
+    
+    </script>
+</body>
+</html>
