@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tömbökön belüli tömbök ciklusa!</title>
+</head>
+<body>
+
+<h1>Autók listája</h1>
+<ul id="autokLista"></ul>
+
+<script>
+let SZKobj = {
+    "name" : "Szalóczy Krisztián",
+    "age" : 22,
+    "cars": [
+        {"name":"Toyota", "models":["CHR","Corolla","Proace"]},
+        {"name":"Ford", "models":["Kuga", "Mondeo", "Mustang"]},
+        {"name":"BMW", "models":["320","X3","X5"]},
+        {"name":"Fiat", "models":["500","Panda","Tipo"]}
+    ]
+};
+
+const autokListaElem = document.getElementById("autokLista");
+
+for (let i = 0; i < SZKobj.cars.length; i++) {
+    let markaElem = document.createElement("h3");
+    markaElem.textContent = SZKobj.cars[i].name;
+    autokListaElem.appendChild(markaElem);
+
+    const modellListaElem = document.createElement("ul");
+    for (let j = 0; j < SZKobj.cars[i].models.length; j++) {
+        let modellElem = document.createElement("li");
+        modellElem.textContent = SZKobj.cars[i].models[j];
+        modellListaElem.appendChild(modellElem);
+    }
+    autokListaElem.appendChild(modellListaElem);
+}
+</script>
+
+</body>
+</html>

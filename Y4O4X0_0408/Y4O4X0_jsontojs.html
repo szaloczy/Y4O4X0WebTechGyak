@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Könyvek</h1>
+    <header><h1>JSON megvalósítása – JavaScript</h1></header>
+    <h3>Könyvek</h3>
 
     <div id="konyvLista"></div>
 
@@ -33,8 +34,11 @@
 
             for (let i = 0; i < konyvekJSON.konyvek.konyv.length; i++) {
                 let konyv = konyvekJSON.konyvek.konyv[i];
-                konyvListaHTML += "<li><strong>Szerző:</strong>" + konyv.szerzo + "<strong>cim:</strong>" + konyv.cim + "<strong>"
+                konyvListaHTML += "<li><strong>Szerző: </strong>" + konyv.szerzo + "<strong> cim: </strong>" + konyv.cim + "<strong> Kiadás éve: </strong> " + konyv.kiadas_eve + "</li>";
             }
+
+            konyvListaHTML += "</ul>";
+            konyvListaElem.innerHTML = konyvListaHTML;
 
     </script>
 </body>
