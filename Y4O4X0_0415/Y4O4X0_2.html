@@ -14,8 +14,8 @@
     <p>A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni.</p>
     <p><strong>Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</strong></p>
 
-    <button click="hide()"><strong>Kattints ide - a bekezdése elrejtve!</strong></button>
-    <p>Me weboldal: <a href="https://www.uni-miskolc.hu/" target="_blank">Miskolci Egyetem</a></p>
+    <button id="katIdeBtn" onclick="katIdeBtn()"><strong>Kattints ide - a bekezdése elrejtve!</strong></button>
+    <p id="linkszoveg">Me weboldal: <a href="https://www.uni-miskolc.hu/" target="_blank">Miskolci Egyetem</a></p>
 
     <ul>
         <li>hamburger</li>
@@ -29,7 +29,7 @@
         <li>répa</li>
     </ol>
 
-    <table>
+    <table id="table1">
         <tr><td>1</td><td>2</td><td>3</td></tr>
         <tr><td>4</td><td>5</td><td>6</td></tr>
         <tr><td>7</td><td>8</td><td>9</td></tr>
@@ -37,10 +37,10 @@
         <tr><td>13</td><td>14</td><td>15</td></tr>
     </table>
 
-    <button id="K1">K1</button>
-    <button id="K2">K2</button>
-    <button id="K3">K3</button>
-    <button id="K4">K4</button>
-    <button id="K5">K5</button>
+    <button id="K1" onclick="elrejtK1()">K1</button>
+    <button id="K2" onclick="elrejtK2()">K2</button>
+    <button id="K3" onclick="elrejtK3()">K3</button>
+    <button id="K4" onclick="elrejtK4()">K4</button>
+    <button id="K5" onclick="elrejtK5()">K5</button>
 </body>
 </html>
