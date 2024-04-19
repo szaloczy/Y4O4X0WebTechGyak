@@ -1,0 +1,278 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    padding:0;
+    margin:0;
+}
+
+.main-title{
+    font-size: 25px;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+#navbar{
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 100;
+}
+
+#toggleBtn{
+    position: absolute;
+    top: 150px; 
+    left: 10px; 
+    background-color: transparent; 
+    color: #fff; 
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.intro-text-title{
+    font-size: 30px;
+}
+
+.intro-text{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 200px;
+    line-height: 20px;
+    transform: translate(-20%, -20%);
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.banner{
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner-content{
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    padding-left: 250px;
+    display: flex;
+}
+
+.banner-text{
+    text-align: left;
+    width: 500px;
+}
+
+.collection-container{
+    margin: 100px;
+}
+
+.collection-container hr{
+    color: black;
+}
+
+.collection-title{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+}
+
+.collection-img-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collection-img-container img{
+    width: 25%;
+    margin: 10px;
+}
+
+.table-container td{
+    position: relative;
+}
+
+.content-top-left{
+  position: absolute;
+  top: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.content-middle{
+    position: absolute;
+    font-size: 18px;
+    color: brown;
+    top: 50px;
+}
+
+.clock-feature{
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.content-list{
+    position: absolute;
+    line-height: 20px;
+    top: 100px;
+    font-size: 18px;
+}
+
+.gallery{
+    padding: 50px;
+    display: flex;
+}
+
+.gallery-item{
+    flex: 1;
+    padding: 50px;
+}
+
+.gallery-img{
+    width: 100%;
+}
+
+.fromBtn-container{
+    text-align: center;
+}
+
+#formBtn{
+    background-color: green;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 0px 30px 30px 0px;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+
+#popup-form{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid green;
+    border: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    width: 300px;
+}
+
+#form-container {
+    width: 100%;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+button {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#error {
+    color: red;
+}
+
+#result {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+footer{
+    display: flex;
+}
+
+.footer-left{
+    flex:2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footer-menu-title{
+    font-size: 16px;
+}
+
+.footer-menu-list{
+    padding: 0;
+    list-style: none;
+}
+
+.footer-list-item{
+    margin-bottom:10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.footer-right{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-input{
+    padding: 5px;
+}
+
+.footer-button{
+    pad: 5px;
+    background-color: black;
+    color: white;
+}
+
+.footer.icons{
+    display: flex;
+}
+
+.footer-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.copyright{
+    font-weight: 300;
+    font-size: 14px;
+}

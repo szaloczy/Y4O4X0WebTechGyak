@@ -1,0 +1,26 @@
+{
+    "models" : [
+        {
+            "id" : 1,
+            "title":"Baume et Mercier - A. Lange & Söhne",
+            "release" : 1990,
+            "img" : "/assets/baume1.png",
+            "description":"A. Lange & Söhne creates outstanding mechanical timepieces that feature challenging complications and follow a clear and classical design line. Innovative engineering skills and traditional craftsmanship at the highest level guarantee a state-of-the-art calibre design with meticulously hand-finished movements and utmost mechanical precision."
+        },
+        {
+            "id": 2,
+            "title": "Baume et Mercire - Classima",
+            "release": 1998,
+            "img": "/assets/baume2.png",
+            "description": "Be ahead of the curve with this prestigious timepiece from the Classima collection by Baume & Mercier. The face of this watch will entice you with With anti-reflective coating, Scratch resistant sapphire crystal and Roman numerals, Indexes to denote the time. Furthermore, the Enamel dial of the watch splendidly completes the face, with a Polished bezel to declare its superior craftsmanship. The Stainless steel material of the band finishes this piece with style that will never go out of style. For adventure enthusiasts, this watch has water resistance up to 150 ft (50 meter)."
+          },
+          {
+            "id": 3,
+            "title": "Baume et Mercire - Riviera",
+            "release": 2011,
+            "img": "/assets/baume3.png",
+            "description": "Baume & Mercier presented the Riviera as early as 1973, and in 2021 it appeared in its new, authentic version: while the silhouette of the original watch is recognisable, today's Riviera keeps up with the times both visually and technically. The typical twelve-sided bezel and the uniquely decorated dial make the watch an eye-catcher."
+
+          }
+    ]
+}

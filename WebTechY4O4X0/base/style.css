@@ -1,0 +1,536 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.search-input{
+    border: none;
+    background-color: transparent;
+}
+
+.search-input::placeholder{
+    color: lightgray;
+}
+
+.limited-offer{
+    font-size: 20px;
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+}
+
+.bottom-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 100;
+}
+
+.slider{
+    background: url("https://media.istockphoto.com/id/1416107992/hu/fot%C3%B3/absztrakt-fekete-akvarellfest%C5%91-text%C3%BAra-h%C3%A1tt%C3%A9r-vintage-grunge-s%C3%B6t%C3%A9t-h%C3%A1tt%C3%A9r-az-eszt%C3%A9tikus.jpg?s=2048x2048&w=is&k=20&c=6k88BX0FdtSFLRjm7ezW_fL-gdqbbjVjPWjetXeJB68=");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+}
+
+.slider-box{
+    display:flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+
+.slider-img{
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+}
+
+.slider-item{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-background{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.slider-title{
+    position: absolute;
+    right: 10%;
+    color: white;
+    top: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+}
+
+.slider-price{
+    position: absolute;
+    left: 10%;
+    color: white;
+    top: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    z-index: 1;
+}
+
+.buy-button{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color:white;
+    border: 1px solid gray;
+    z-index: 1;
+    background-color: black;
+    cursor: pointer;
+}
+
+.buy-button:hover{
+    background-color: white;
+    color:black;
+}
+
+.slider-item:nth-child(1) .slider-background{
+    background-color: aqua;
+}
+.slider-item:nth-child(2) .slider-background{
+    background-color:darkorange;
+}
+.slider-item:nth-child(3) .slider-background{
+    background-color:darkslategrey;
+}
+.slider-item:nth-child(4) .slider-background{
+    background-color:paleturquoise;
+}
+.slider-item:nth-child(5) .slider-background{
+    background-color: beige;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.feature-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.feature-desc{
+    color:gray;
+    width: 50%;
+    height: 100px;
+}
+
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.product-img{
+    width: 50%;
+}
+
+.product-details{
+    position: absolute;
+    top:10%;
+    right:0;
+    width: 40%;
+    padding: 50px;
+}
+
+.product-title{
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.product-desc{
+    font-style: 24px;
+    color: gray;
+}
+
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none; /*not working yet*/
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87); 
+    box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87);
+}
+
+.pay-title{
+    font-size: 20px;
+    color: darkgray;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.pay-input{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom:  1px solid gray;
+}
+
+.pay-input::placeholder{
+    color: rgb(163, 163, 163);
+}
+
+.card-icons{
+    display: flex;
+}
+
+.card-icon{
+    margin-right: 10px;
+}
+
+.card-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm{
+    width: 140px;
+}
+
+.pay-button{
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0px;
+    -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87); 
+    box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.87);
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    top:10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.types, .sizes{
+    display: flex;
+}
+
+.type{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: brown;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.type:last-child{
+    background-color: silver;
+}
+
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.product-button{
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.product-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.gallery{
+    padding: 50px;
+    display: flex;
+}
+
+.gallery-item{
+    flex: 1;
+    padding: 50px;
+}
+
+.gallery-img{
+    width: 100%;
+}
+
+.new-area{
+    display: flex;
+}
+
+.na-item{
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.na-img{
+    width: 100%;
+    height: 500px;
+}
+
+.na-title{
+    font-size: 40px;
+}
+
+.na-button{
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+}
+
+.footer-left{
+    flex:2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footer-menu-title{
+    font-size: 16px;
+}
+
+.footer-menu-list{
+    padding: 0;
+    list-style: none;
+}
+
+.footer-list-item{
+    margin-bottom:10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.footer-right{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-input{
+    padding: 5px;
+}
+
+.footer-button{
+    pad: 5px;
+    background-color: black;
+    color: white;
+}
+
+.footer.icons{
+    display: flex;
+}
+
+.footer-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.copyright{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+@media screen and (max-width:480px){
+    nav{
+        padding: 20px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .bottom-nav{
+        flex-wrap: wrap;
+    }
+
+    .menu-item{
+        margin: 20px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .slider{
+        clip-path: none;
+    }
+
+    .slider-img{
+        width: 90%;
+    }
+
+    .slider-background{
+        width: 100%;
+        height: 100%;
+    }
+
+    .slider-title{
+        display: none;
+    }
+
+    .sliderPrice{
+        top: unset;
+        bottom: 0;
+        left: 0;
+        background-color: lightgrey;
+    }
+
+    .buy-button{
+        right: 0;
+        top: 0;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+
+    .product{
+        clip-path: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-img{
+        width: 80%;
+    }
+
+    .product-details{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top:0;
+    }
+
+    .product-title{
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .gallery{
+        display: none;
+    }
+
+    .new-area{
+        flex-direction: column;
+    }
+
+    .na-item:nth-child(2){
+        padding: 50px;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left{
+        padding: 20px;
+        width: 90%;
+    }
+
+    .footer-right{
+        padding:20px;
+        width: 90%;
+        align-items: center;
+        background-color: whitesmoke;
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "models" : [
+        {
+            "id" : 1,
+            "title":"Orient - Bambino II",
+            "release" : 2022,
+            "img" : "/assets/orient1.png",
+            "description":"Orient's Bambino model featuring a 38mm case size first premiered in 2022 and has since been one of the bestseller timepieces for the watch brand. Now, Orient has readied a new iteration of the Bambino in an array of new colorways, along with a new case size of 38.4mm."
+        },
+        {
+            "id": 2,
+            "title": "Orient - Star Contemporary",
+            "release": 2014,
+            "img": "/assets/orient2.png",
+            "description": "Orient Star's Modern Skeleton has been a bestseller around the world since its launch in 2014. Joining the collection in its 10th year, the new models are characterised by dial colours that complement the metallic textures of the case and other parts of the watch."
+          },
+          {
+            "id": 3,
+            "title": "Orient - Sun and Moon Version 3",
+            "release": 2000,
+            "img": "/assets/orient3.png",
+            "description": "Rose gold-tone stainless steel case with a brown leather strap. Fixed rose gold-tone bezel. Brown dial with silver-tone hands and Roman numeral hour markers. Minute markers around the outer rim. Dial Type: Analog. Date display at the 8 o'clock position. Two sub-dials displaying: day of the week and day/night indicator. Orient calibre F6B24 automatic movement with a 40-hour power reserve. Scratch resistant sapphire crystal."
+          }
+    ]
+}

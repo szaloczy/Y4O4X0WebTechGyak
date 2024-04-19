@@ -1,0 +1,26 @@
+{
+    "models" : [
+        {
+            "id" : 1,
+            "title":"Orient - Santos De Cartier",
+            "release" : 1904,
+            "img" : "/assets/catier1.png",
+            "description":"This stylish Cartier comes from the Cartier Santos collection and has a steel gold strap in combination with a steel gold case that has a unique square shape. The dial of this model has a white dial with a Roman hour indication in combination with a date window at the 6 o'clock position. The model has an automatic 1847 MC caliber. The model has been tested for water resistance up to 100 meters."
+        },
+        {
+            "id": 2,
+            "title": "Orient - Tank Louis",
+            "release": 1922,
+            "img": "/assets/cartier2.png",
+            "description": "Tank Louis Cartier watch, large model, Manufacture mechanical movement with manual winding, caliber 8971 MC. Case in rose gold 750/1000, beaded crown set with a sapphire cabochon, silvered beaded dial, blued-steel sword-shaped hands, mineral crystal, strap in semi-matte brown alligator skin, ardillon buckle in rose gold 750/1000. Case dimensions: 33.7 mm x 25.5 mm, 6.6 mm thick. Water-resistant to 3 bar (30 meters)."
+          },
+          {
+            "id": 3,
+            "title": "Cartier - Calibre de Cartier",
+            "release": 2010,
+            "img": "/assets/cartier3.png",
+            "description": "Contemporary and refined, the Calibre de Cartier watch reinterprets the round form in watchmaking with character and style. Equipped with the new Manufacture Cartier movement, the 1904 MC, this new timepiece is a combination of sporting masculinity and exceptional expertise."
+
+          }
+    ]
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery/jquery3.7.1.js"></script>
+    <title>WatchOut</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+        }
+        .content-text {
+            padding-left: 10px;
+        }
+
+        .introduction {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .introduction h1 {
+        color: #333;
+    }
+
+    .introduction p {
+        color: #666;
+        line-height: 1.6;
+    }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <header class="main-title">WatchOut</header>
+        <hr>
+        <div class="navbar">
+            <h3 class="menu-item">HOME</h3>
+            <h3 class="menu-item"><a href="watches/rolex/rolex.html">ROLEX</a></h3>
+            <h3 class="menu-item"><a href="watches/orient/orient.html">ORIENT</a></h3>
+            <h3 class="menu-item"><a href="watches/cartier/cartier.html">CARTIER</a></h3>
+            <h3 class="menu-item"><a href="watches/baume/baume.html">BAUME</a></h3>
+        </div>
+    </nav>
+
+    <div class="intro-container">
+        <div style="width: 100%; height: 400px; overflow: hidden;">
+            <video id="intro" src="/assets/intro.webm" style="width: 100%; height: auto;" controls></video>
+            <button id="toggleBtn" onclick="toggleVideo()"> 
+                <i id="playIcon" class="fas fa-play"></i>
+                <i id="pauseIcon" class="fas fa-pause" style="display: none;"></i>
+            </button>
+            <aside class="intro-text">
+                <span class="intro-text-title">WatchOut</span> <br><br>
+                Join us in ushering in a new era for watch collectors. Discover our locations, global community,
+                 curated collections - both new and collectible pre-owned - and let's talk watches.
+            </aside>
+        </div>
+    </div>
+
+
+    <article class="introduction">
+        <h1>Welcome to the World of Watches!</h1>
+        <p>This page showcases the functionality of watches and highlights prominent brands such as Rolex, Orient, Cartier, and BAUM.</p>
+        <p>The world of watches is exciting and diverse. Behind every timepiece lies a unique mechanism capable of precise timekeeping and stylish aesthetics.</p>
+        <p>Explore the table below to learn more about these watches and their operations!</p>
+    </article>
+
+    <div class="collection-container">
+        <div class="collection-title">Watches By Functionality</div>
+        <hr>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <div class="content">
+                            <img src="assets/analogFunc.png" alt="">
+                            <div class="content-text">
+                                <div class="content-top-left">Analogue</div>
+                                <div class="content-middle"><span class="clock-feature">Standout feature:</span> Representation of the classic & traditional side of timepieces</div>
+                                <div class="content-list">
+                                    <ul>
+                                        <li>Traditional clock face</li>
+                                        <li>Three-hand movement</li>
+                                        <li>For every budget</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td colspan="2">
+                        <div class="content">
+                            <img src="assets/digitalfunc.png" alt="">
+                            <div class="content-text">
+                                <div class="content-top-left">Digital</div>
+                                <div class="content-middle"><span class="clock-feature">Standout feature:</span> An electronic dispaly</div>
+                                <div class="content-list">
+                                    <ul>
+                                        <li>Time in numerical digits</li>
+                                        <li>Packed with features like a GPS, pedometer & more</li>
+                                        <li>For every budget</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="content">
+                            <img src="assets/chonographfunc.png" alt="">
+                            <div class="content-text">
+                                <div class="content-top-left">Chronograph</div>
+                                <div class="content-middle"><span class="clock-feature">Standout feature:</span> More complications & functions with subdials often include stopwatches, tachymeters & more</div>
+                                <div class="content-list">
+                                    <ul>
+                                        <li>Powered solely by any light</li>
+                                        <li>Doesn't require battery replacements</li>
+                                        <li>Accurate to about +/- 15 seconds a month</li>
+                                        <li>Quartz crystal timekeeping</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div class="content">
+                            <img src="assets/hybridfunc.png" alt="">
+                            <div class="content-text">
+                                <div class="content-top-left">Hybrid</div>
+                                <div class="content-middle"><span class="clock-feature">Standout feature:</span> Combines digital features with traditonal watch mechanics</div>
+                                <div class="content-list">
+                                    <ul>
+                                        <li>Analogue & digital combo</li>
+                                        <li>Similar smart watch functionality</li>
+                                        <li>For every budget</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+   
+    <section class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                Explore the elegant world of wristwatches, where craftsmanship meets sophistication in every detail.  <br>
+              
+            </div>
+            <div class="banner-img-left">
+                <img src="assets/bannerimg.jpg" height="120px" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="collection-container">
+            <div class="collection-title">Watches By Movement</div>
+            <hr>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <div class="content">
+                                <img src="assets/automatic.png" alt="">
+                                <div class="content-text">
+                                    <div class="content-top-left">Automatic</div>
+                                    <div class="content-middle"><span class="clock-feature">Standout feature:</span> Self-winding via kinetic energy.</div>
+                                    <div class="content-list">
+                                        <ul>
+                                            <li>Automatic watches store energy automatically by utilising the movement of your wrist</li>
+                                            <li>Accurate to about +/- 20 seconds a day</li>
+                                            <li>Available for all budgets</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td colspan="2">
+                            <div class="content">
+                                <img src="assets/mechanikal.png" alt="">
+                                <div class="content-text">
+                                    <div class="content-top-left">Mechanikal</div>
+                                    <div class="content-middle"><span class="clock-feature">Standout feature:</span> intricate series of tiny components work together to power the timepiece</div>
+                                    <div class="content-list">
+                                        <ul>
+                                            <li>Mechanical movements never require batteries because they require periodical hand-winding to operate</li>
+                                            <li>AAccurate to about +/-20 seconds a day</li>
+                                            <li>Super reliable and just plain cool to look at</li>
+                                            <li>Higher price tag than other movements</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="content">
+                                <img src="assets/solar.png" alt="">
+                                <div class="content-text">
+                                    <div class="content-top-left">Solar</div>
+                                    <div class="content-middle"><span class="clock-feature">Standout feature:</span> The abality to convert light energy into electronic energy</div>
+                                    <div class="content-list">
+                                        <ul>
+                                            <li>Powered solely by any light</li>
+                                            <li>Doesn't require battery replacements</li>
+                                            <li>Accurate to about +/- 15 seconds a month</li>
+                                            <li>Quartz crystal timekeeping</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>
+                            <div class="content">
+                                <img src="assets/quartz.png" alt="">
+                                <div class="content-text">
+                                    <div class="content-top-left">Quartz</div>
+                                    <div class="content-middle"><span class="clock-feature">Standout feature:</span> Very accurate and require minimal maintenance</div>
+                                    <div class="content-list">
+                                        <ul>
+                                            <li>The most affordable watch movement</li>
+                                            <li>Uses electronic circuits regulated by quartz crystal</li>
+                                            <li>Requires a battery to function & battery replacement every 2-3 years</li>
+                                            <li>Accurate to about +/- 15 seconds a month</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <h1 class="gallery-title">WatchOut!</h1>
+            <img src="https://images.pexels.com/photos/380782/pexels-photo-380782.jpeg?auto=compress&cs=tinysrgb&w=300" alt="gallery image" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/2919052/pexels-photo-2919052.jpeg?auto=compress&cs=tinysrgb&w=300" alt="gallery image" class="gallery-img">
+            <h1 class="gallery-title">Be Yourself!</h1>
+        </div>
+        <div class="gallery-item">
+            <h1 class="gallery-title">Join Us!</h1>
+            <img src="https://images.pexels.com/photos/4405244/pexels-photo-4405244.jpeg?auto=compress&cs=tinysrgb&w=300" alt="gallery image" class="gallery-img">
+        </div>
+    </div>
+
+    <div class="fromBtn-container">
+        <button id="formBtn">Share your experience</button>
+    </div>
+
+    <div id="popup-form">
+        <h2>Email Form</h2>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email"><br>
+    
+            <label for="dateOB">Date of birth:</label>
+            <input type="date" id="dateOB" name="dateOB"><br><br>
+
+            <input type="radio" id="gender" name="gender">
+            <label for="gender">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="watches">Favourite watch:</label>
+            <datalist id="watch">
+              <option value="Rolex">
+              <option value="Orient">
+              <option value="Cartier">
+              <option value="Baume">
+            </datalist>
+            <input list="watch" id="favWatch" name="favWatch"><br><br>
+            
+            <label for="color">Favourite color:</label>
+            <input type="color" id="selectColor" name="selectColor"><br>
+            
+            <label for="CWatches">List of brands:</label><br>
+            <ol id="CWatches">
+              <li>Rolex</li>
+              <li>Orient</li>
+              <li>Cartier</li>
+              <li>Baum</li>
+            </ol>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <div class="footer-menu">
+                <h1 class="footer-menu-title">Source</h1>
+                <ul class="footer-menu-list">
+                    <li class="footer-list-item">Company</li>
+                    <li class="footer-list-item">Contanct</li>
+                    <li class="footer-list-item">Careers</li>
+                    <li class="footer-list-item">Affiliates</li>
+                    <li class="footer-list-item">Stores</li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h1 class="footer-menu-title">Brands</h1>
+                <ul class="footer-menu-list">
+                    <li class="footer-list-item">Rolex</li>
+                    <li class="footer-list-item">Orient</li>
+                    <li class="footer-list-item">Cartier</li>
+                    <li class="footer-list-item">Baum</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-right-menu">
+                <h1 class="footer-menu-title">Subscribe to our newsletter</h1>
+                <div class="footer-mail">
+                    <input type="text" placeholder="your@email.com" class="footer-input">
+                    <button class="footer-button">Join!</button>
+                </div>
+            </div>
+            <div class="footer right-menu">
+                <h1 class="footer-menu-title">Follow Us</h1>
+                <div class="footer-icons">
+                    <img src="" alt="" class="footer-icon">
+                    <img src="" alt="" class="footer-icon">
+                    <img src="" alt="" class="footer-icon">
+                </div>
+            </div>
+            <div class="footer-right-menu">
+                <span class="copyright">@szaloczy. All rights reserved. 2024</span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
