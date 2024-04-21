@@ -67,3 +67,9 @@ function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
 }
+
+$('.menu-item').mouseenter(function() {
+    $(this).stop().animate({ fontSize: '24px' }, 200); // Betűméret növelése animációval az egér fölé kerüléskor
+}).mouseleave(function() {
+    $(this).stop().animate({ fontSize: '18px' }, 200); // Betűméret visszaállítása animációval az egér elhagyásakor
+});

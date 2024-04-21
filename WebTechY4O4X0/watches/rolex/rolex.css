@@ -36,6 +36,10 @@ nav a{
     font-weight: 100;
 }
 
+.gold {
+    color: gold !important; /* Arany betűszín */
+}
+
 .banner-content{
   position: relative;
   text-align: center;

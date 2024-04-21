@@ -3,20 +3,6 @@ const box = document.querySelector(".slides");
 let slideIndex = 0;
 let intervalId = null;
 let models = [];
-
-$(document).ready(function() {
-    $.ajax({
-        url: "model.json", 
-        dataType: "json",
-        success: function(data) {
-            models = data.models;
-        },
-        error: function(xhr, status, error) {
-            console.error("AJAX hiba:", status, error);
-        }
-    });
-});
-
 let choosenModel = models[0];
 
 const currentModelImg = document.querySelector(".model-img");
@@ -67,3 +53,23 @@ function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
 }
+
+$(document).ready(function() {
+    $('.menu-item').mouseenter(function() {
+        $(this).stop().animate({ fontSize: '24px' }, 200); 
+    }).mouseleave(function() {
+        $(this).stop().animate({ fontSize: '18px' }, 200); 
+    });
+
+    $.ajax({
+        url: "model.json", 
+        dataType: "json",
+        success: function(data) {
+            models = data.models;
+        },
+        error: function(xhr, status, error) {
+            console.error("AJAX hiba:", status, error);
+        }
+    });
+});
+

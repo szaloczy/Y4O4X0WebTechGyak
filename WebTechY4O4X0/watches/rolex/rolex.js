@@ -29,6 +29,19 @@ let models = [];
 ] */
 
 $(document).ready(function() {
+
+    $('.menu-item').mouseenter(function() {
+        $(this).stop().animate({ fontSize: '24px' }, 200); // Betűméret növelése animációval az egér fölé kerüléskor
+    }).mouseleave(function() {
+        $(this).stop().animate({ fontSize: '18px' }, 200); // Betűméret visszaállítása animációval az egér elhagyásakor
+    });
+
+        $('.rolex-img-banner img').mouseenter(function() {
+            $(this).stop().animate({ opacity: 0.7 }, 300); 
+        }).mouseleave(function() {
+            $(this).stop().animate({ opacity: 1 }, 300); 
+        });
+
     $.ajax({
         url: "model.json", 
         dataType: "json",
