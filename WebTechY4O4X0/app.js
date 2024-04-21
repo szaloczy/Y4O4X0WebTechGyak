@@ -3,6 +3,41 @@ const  button = document.getElementById("toggleBtn");
 const pauseIcon = document.getElementById("pauseIcon");
 const playIcon = document.getElementById("playIcon");
 
+document.addEventListener('DOMContentLoaded', function(){
+    let form = document.getElementById('popup-form');
+    let displayData = document.getElementById("displayData");
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let bornDate = document.getElementById('dateOB').value;
+        let gender = document.querySelector('input[name="gender"]:checked').value;
+
+        const dataList = document.querySelector('#watch');
+        const options = dataList.querySelectorAll('option');
+        let favouriteWatches = [];
+        options.forEach(option => {
+            favouriteWatches.push(option.value);
+        });
+
+        const messageInput = document.querySelector('#message');
+        const message = messageInput.value;
+
+        let datasDiv = document.createElement('div');
+        datasDiv.innerHTML = '<h3>Your Experiences</h3>'+
+                             '<p><strong>Name:</strong> ' + name + '</p>'+
+                             '<p><strong>E-mail:</strong> ' + email + '</p>' +
+                             '<p><strong>Born date:</strong> ' + bornDate + '</p>' + 
+                             '<p><strong>Gender:</strong> ' + gender + '</p>' + 
+                             '<p><strong>Favourite watch:</strong> ' + favouriteWatches[0] + '</p>' +
+                             '<p><strong>Message:</strong> ' + message + '</p>';
+        displayData.appendChild(datasDiv);
+
+        form.style.display='none';
+    });
+});
 function toggleVideo(){
     if (video.paused) {
         video.play();
@@ -16,12 +51,20 @@ function toggleVideo(){
 }
 
 video.addEventListener("click", event => {
-    event.preventDefault(); // Megakadályozza a videó leállítását a kattintással
+    event.preventDefault(); 
 });
 
 $(document).ready(function() {
 
-   
+     $('#satisfaction').on('input', function() {
+        $('#satisfactionValue').text($(this).val());
+    });
+
+    $('.menu-item').mouseenter(function() {
+        $(this).stop().animate({ fontSize: '24px' }, 200);
+    }).mouseleave(function() {
+        $(this).stop().animate({ fontSize: '18px' }, 200); 
+    });
 
     $("#formBtn").click(function() {
         $("#popup-form").fadeIn();
@@ -39,7 +82,6 @@ $(document).ready(function() {
         $(this).animate({opacity: '0.5'}, 'slow').animate({opacity: '1'}, 'slow');
     })
 
-    // Form validation
     $('#popup-form').submit(function(e) {
         e.preventDefault();
         $('#error').empty();
@@ -64,53 +106,23 @@ $(document).ready(function() {
         }
 
         if (name !== '' && isValidEmail(email)) {
-            // Create JSON object
             let userData = {
                 name: name,
                 email: email
             };
 
-            // Convert JSON object to string
             let jsonData = JSON.stringify(userData);
 
-            // Display result
             $('#result').text(jsonData);
-
-            // AJAX call to save JSON data
-            $.ajax({
-                url: 'data.json',
-                type: 'POST',
-                contentType: 'application/json',
-                data: jsonData,
-                success: function(response) {
-                    console.log('Data saved successfully:', response);
-                },
-                error: function(xhr, status, error) {
-                    console.error('Error saving data:', error);
-                }
-            });
         }
     });
 
-    // AJAX call to load JSON data
-    $.ajax({
-        url: 'data.json',
-        type: 'GET',
-        dataType: 'json',
-        success: function(data) {
-            console.log('Data loaded successfully:', data);
-            // Display loaded data on the page
-            $('#loadedData').text(JSON.stringify(data));
-        },
-        error: function(xhr, status, error) {
-            console.error('Error loading data:', error);
-        }
-    });
+    $('.banner').mouseenter(function(){
+        $('.banner.text').css('opacity',0.1);
+    })
 });
 
-// Function to validate email format
 function isValidEmail(email) {
     let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return pattern.test(email);
 }
-

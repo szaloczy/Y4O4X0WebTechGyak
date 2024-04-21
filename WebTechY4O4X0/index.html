@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="jquery/jquery3.7.1.js"></script>
@@ -156,15 +155,9 @@
     </div>
    
     <section class="banner">
-        <div class="banner-content">
             <div class="banner-text">
                 Explore the elegant world of wristwatches, where craftsmanship meets sophistication in every detail.  <br>
-              
             </div>
-            <div class="banner-img-left">
-                <img src="assets/bannerimg.jpg" height="120px" alt="">
-            </div>
-        </div>
     </section>
 
     <div class="collection-container">
@@ -295,34 +288,30 @@
             <input list="watch" id="favWatch" name="favWatch"><br><br>
             
             <label for="color">Favourite color:</label>
-            <input type="color" id="selectColor" name="selectColor"><br>
-            
-            <label for="CWatches">List of brands:</label><br>
-            <ol id="CWatches">
-              <li>Rolex</li>
-              <li>Orient</li>
-              <li>Cartier</li>
-              <li>Baum</li>
-            </ol>
+            <input type="color" id="selectColor" name="selectColor"><br><br>
+
+            <label for="satisfaction">How satisfied are you with the website? (1-10)</label>
+            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="5">
+            <div id="satisfactionValue">5</div>
 
             <label for="message">Message:</label><br>
             <textarea id="message" name="message"></textarea><br>
 
-            <input type="reset" value="Reset">
-            <input type="submit" value="Submit">
+            <input id="form-btn" type="reset" value="Reset">
+            <input id="form-btn" type="submit" value="Submit">
         </form>
     </div>
+
+    <div id="displayData"></div>
 
     <footer>
         <div class="footer-left">
             <div class="footer-menu">
                 <h1 class="footer-menu-title">Source</h1>
                 <ul class="footer-menu-list">
-                    <li class="footer-list-item">Company</li>
-                    <li class="footer-list-item">Contanct</li>
-                    <li class="footer-list-item">Careers</li>
-                    <li class="footer-list-item">Affiliates</li>
-                    <li class="footer-list-item">Stores</li>
+                    <li><a href="https://www.thewatchbox.com/">https://www.thewatchbox.com/</a></li>
+                    <li><a href="https://www.thewatchpages.com/">https://www.thewatchpages.com/</a></li>
+                    
                 </ul>
             </div>
             <div class="footer-menu">
@@ -346,9 +335,9 @@
             <div class="footer right-menu">
                 <h1 class="footer-menu-title">Follow Us</h1>
                 <div class="footer-icons">
-                    <img src="" alt="" class="footer-icon">
-                    <img src="" alt="" class="footer-icon">
-                    <img src="" alt="" class="footer-icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
             </div>
             <div class="footer-right-menu">

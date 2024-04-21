@@ -74,6 +74,7 @@ nav a{
 }
 
 .banner{
+    position: relative;
     height: 150px;
     width: 100%;
     background-color: black;
@@ -83,17 +84,12 @@ nav a{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.banner-content{
-    align-items: center;
-    margin: 20px;
-    padding: 20px;
-    padding-left: 250px;
-    display: flex;
-}
-
-.banner-text{
-    text-align: left;
-    width: 500px;
+.banner-text {
+    padding-top: 15px;
+    text-align: center;
+    width: 420px;
+    margin: auto;
+    line-height: 35px;
 }
 
 .collection-container{
@@ -201,6 +197,25 @@ nav a{
     text-align: center;
 }
 
+#form-btn{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    padding: 5px;
+    height: 35px;
+}
+
+#popup-form h2{
+    text-align: center;
+}
+
+#message{
+    width: 300px;
+    height: 100px;
+}
+
 input[type="text"],
 input[type="email"],
 button {
@@ -216,6 +231,27 @@ button {
     margin-top: 20px;
     border: 1px solid #ccc;
     padding: 10px;
+}
+
+#data-container {
+    
+}
+
+#displayData h3{
+    text-align: center;
+}
+
+#displayData p{
+   margin: 10px;
+}
+
+#displayData{
+    margin: auto;
+    border: 1px solid;
+    width: 300px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    margin: auto;
 }
 
 footer{
@@ -236,6 +272,11 @@ footer{
 .footer-menu-list{
     padding: 0;
     list-style: none;
+}
+
+.footer-menu a{
+    text-decoration: none;
+    color: black;
 }
 
 .footer-list-item{
