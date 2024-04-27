@@ -1,7 +1,30 @@
+
+
 const video = document.getElementById("intro");
 const  button = document.getElementById("toggleBtn");
 const pauseIcon = document.getElementById("pauseIcon");
 const playIcon = document.getElementById("playIcon");
+
+const images = document.querySelectorAll('.content img');
+
+
+
+// Minden kép elemhez eseménykezelő hozzáadása
+images.forEach(image => {
+    // Egér belépése eseménykezelő
+    image.addEventListener('mouseenter', () => {
+        // Képhez tartozó szöveges tartalom megjelenítése
+        const text = image.nextElementSibling;
+        text.style.display = 'block';
+    });
+
+    // Egér kilépése eseménykezelő
+    image.addEventListener('mouseleave', () => {
+        // Képhez tartozó szöveges tartalom elrejtése
+        const text = image.nextElementSibling;
+        text.style.display = 'none';
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function(){
     let form = document.getElementById('popup-form');
@@ -56,7 +79,23 @@ video.addEventListener("click", event => {
 
 $(document).ready(function() {
 
-     $('#satisfaction').on('input', function() {
+    $('.content').mouseenter(function() {
+        $(this).find('.content-text').show();
+    }).mouseleave(function() {
+        $(this).find('.content-text').hide();
+    });
+
+    $('#formBtn').hover(function() {
+        $(this).stop().animate({ opacity: 0.7 }, 'fast'); 
+    }, function() {
+        $(this).stop().animate({ opacity: 1 }, 'fast'); 
+    });
+
+    $("#formBtn").click(function() {
+        $("#popup-form").fadeIn();
+    });
+
+    $('#satisfaction').on('input', function() {
         $('#satisfactionValue').text($(this).val());
     });
 
@@ -64,10 +103,6 @@ $(document).ready(function() {
         $(this).stop().animate({ fontSize: '24px' }, 200);
     }).mouseleave(function() {
         $(this).stop().animate({ fontSize: '18px' }, 200); 
-    });
-
-    $("#formBtn").click(function() {
-        $("#popup-form").fadeIn();
     });
 
     $(document).mouseup(function(e) {
@@ -78,10 +113,6 @@ $(document).ready(function() {
         }
     });
 
-    $("#formBtn").click(function(){
-        $(this).animate({opacity: '0.5'}, 'slow').animate({opacity: '1'}, 'slow');
-    })
-
     $('#popup-form').submit(function(e) {
         e.preventDefault();
         $('#error').empty();
@@ -90,14 +121,14 @@ $(document).ready(function() {
 
         if (name === '') {
             $('#name').css('border', '1px solid red');
-            $('#error').text('Name is required');
+            $('#error-name').text('Name is required');
         } else {
             $('#name').css('border', '1px solid #ccc');
         }
 
         if (email === '') {
             $('#email').css('border', '1px solid red');
-            $('#error').text('Email is required');
+            $('#error-email').text('Email is required');
         } else if (!isValidEmail(email)) {
             $('#email').css('border', '1px solid red');
             $('#error').text('Invalid email format');
@@ -105,21 +136,7 @@ $(document).ready(function() {
             $('#email').css('border', '1px solid #ccc');
         }
 
-        if (name !== '' && isValidEmail(email)) {
-            let userData = {
-                name: name,
-                email: email
-            };
-
-            let jsonData = JSON.stringify(userData);
-
-            $('#result').text(jsonData);
-        }
     });
-
-    $('.banner').mouseenter(function(){
-        $('.banner.text').css('opacity',0.1);
-    })
 });
 
 function isValidEmail(email) {

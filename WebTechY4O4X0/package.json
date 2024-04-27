@@ -1,0 +1,23 @@
+{
+  "name": "webtechy4o4x0",
+  "version": "1.0.0",
+  "description": "my first node.js server",
+  "main": "app.js",
+  "scripts": {
+    "test": "ng test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szaloczy/Y4O4X0WebTechGyak.git"
+  },
+  "author": "Szalóczy Krisztián",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szaloczy/Y4O4X0WebTechGyak/issues"
+  },
+  "homepage": "https://github.com/szaloczy/Y4O4X0WebTechGyak#readme",
+  "dependencies": {
+    "cowsay": "^1.6.0"
+  }
+}

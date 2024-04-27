@@ -1,6 +1,10 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const cowsay = require('cowsay');
+
+const output = cowsay.say({ text: 'Hi Krisztián!! :)' });
+console.log(output);
 
 const server = http.createServer((req, res) => {
     

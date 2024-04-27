@@ -19,6 +19,11 @@
         }
         .content-text {
             padding-left: 10px;
+            display: none;
+        }
+        .static-content-text {
+            padding-left: 10px;
+          
         }
 
         .introduction {
@@ -69,7 +74,7 @@
 
     <article class="introduction">
         <h1>Welcome to the World of Watches!</h1>
-        <p>This page showcases the functionality of watches and highlights prominent brands such as Rolex, Orient, Cartier, and BAUM.</p>
+        <p>This page showcases the functionality of watches and highlights prominent brands such as Rolex, Orient, Cartier, and Baum.</p>
         <p>The world of watches is exciting and diverse. Behind every timepiece lies a unique mechanism capable of precise timekeeping and stylish aesthetics.</p>
         <p>Explore the table below to learn more about these watches and their operations!</p>
     </article>
@@ -80,35 +85,35 @@
         <div class="table-container">
             <table>
                 <tr>
-                    <td colspan="2">
+                    <td>
                         <div class="content">
                             <img src="assets/analogFunc.png" alt="">
-                            <div class="content-text">
-                                <div class="content-top-left">Analogue</div>
-                                <div class="content-middle"><span class="clock-feature">Standout feature:</span> Representation of the classic & traditional side of timepieces</div>
-                                <div class="content-list">
-                                    <ul>
-                                        <li>Traditional clock face</li>
-                                        <li>Three-hand movement</li>
-                                        <li>For every budget</li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="static-content-text">
+                            <div class="static-content-top-left">Analogue</div>
+                            <div class="static-content-middle"><span class="static-clock-feature">Standout feature:</span> Representation of the classic & traditional side of timepieces</div>
+                            <div class="static-content-list">
+                                <ul>
+                                    <li>Traditional clock face</li>
+                                    <li>Three-hand movement</li>
+                                    <li>For every budget</li>
+                                </ul>
                             </div>
                         </div>
                     </td>
-                    <td colspan="2">
+                    <td>
                         <div class="content">
                             <img src="assets/digitalfunc.png" alt="">
-                            <div class="content-text">
-                                <div class="content-top-left">Digital</div>
-                                <div class="content-middle"><span class="clock-feature">Standout feature:</span> An electronic dispaly</div>
-                                <div class="content-list">
-                                    <ul>
-                                        <li>Time in numerical digits</li>
-                                        <li>Packed with features like a GPS, pedometer & more</li>
-                                        <li>For every budget</li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="static-content-text">
+                            <div class="static-content-top-left">Digital</div>
+                            <div class="static-content-middle"><span class="static-clock-feature">Standout feature:</span> An electronic display</div>
+                            <div class="static-content-list">
+                                <ul>
+                                    <li>Time in numerical digits</li>
+                                    <li>Packed with features like a GPS, pedometer & more</li>
+                                    <li>For every budget</li>
+                                </ul>
                             </div>
                         </div>
                     </td>
@@ -117,40 +122,38 @@
                     <td>
                         <div class="content">
                             <img src="assets/chonographfunc.png" alt="">
-                            <div class="content-text">
-                                <div class="content-top-left">Chronograph</div>
-                                <div class="content-middle"><span class="clock-feature">Standout feature:</span> More complications & functions with subdials often include stopwatches, tachymeters & more</div>
-                                <div class="content-list">
-                                    <ul>
-                                        <li>Powered solely by any light</li>
-                                        <li>Doesn't require battery replacements</li>
-                                        <li>Accurate to about +/- 15 seconds a month</li>
-                                        <li>Quartz crystal timekeeping</li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="static-content-text">
+                            <div class="static-content-top-left">Chronograph</div>
+                            <div class="static-content-middle"><span class="static-clock-feature">Standout feature:</span> More complications & functions with subdials often include stopwatches, tachymeters & more</div>
+                            <div class="static-content-list">
+                                <ul>
+                                    <li>Powered solely by any light</li>
+                                    <li>Doesn't require battery replacements</li>
+                                    <li>Accurate to about +/- 15 seconds a month</li>
+                                    <li>Quartz crystal timekeeping</li>
+                                </ul>
                             </div>
                         </div>
                     </td>
-                    <td></td>
                     <td>
                         <div class="content">
                             <img src="assets/hybridfunc.png" alt="">
-                            <div class="content-text">
-                                <div class="content-top-left">Hybrid</div>
-                                <div class="content-middle"><span class="clock-feature">Standout feature:</span> Combines digital features with traditonal watch mechanics</div>
-                                <div class="content-list">
-                                    <ul>
-                                        <li>Analogue & digital combo</li>
-                                        <li>Similar smart watch functionality</li>
-                                        <li>For every budget</li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="static-content-text">
+                            <div class="static-content-top-left">Hybrid</div>
+                            <div class="static-content-middle"><span class="static-clock-feature">Standout feature:</span> Combines digital features with traditional watch mechanics</div>
+                            <div class="static-content-list">
+                                <ul>
+                                    <li>Analogue & digital combo</li>
+                                    <li>Similar smart watch functionality</li>
+                                    <li>For every budget</li>
+                                </ul>
                             </div>
                         </div>
                     </td>
                 </tr>
             </table>
-            
         </div>
     </div>
    
@@ -262,15 +265,17 @@
     </div>
 
     <div id="popup-form">
-        <h2>Email Form</h2>
+        <h2>What's Your Experience?</h2>
         <form action="">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name"><br>
-            <label for="email">E-mail</label>
+            <label for="name" class="error" id="error-name"></label><br>
+            <label for="email">E-mail:</label>
             <input type="text" id="email" name="email"><br>
+            <label for="email" class="error" id="error-email"></label><br>
     
             <label for="dateOB">Date of birth:</label>
-            <input type="date" id="dateOB" name="dateOB"><br><br>
+            <input type="date" id="dateOB" name="dateOB" min="1900-01-01" max="2025-01-01"><br><br>
 
             <input type="radio" id="gender" name="gender">
             <label for="gender">Male</label>
@@ -296,6 +301,11 @@
 
             <label for="message">Message:</label><br>
             <textarea id="message" name="message"></textarea><br>
+
+            <label for="agree">
+        <input type="checkbox" id="agree" name="agree">
+        I agree to allow the usage of my data.
+    </label><br><br>
 
             <input id="form-btn" type="reset" value="Reset">
             <input id="form-btn" type="submit" value="Submit">
