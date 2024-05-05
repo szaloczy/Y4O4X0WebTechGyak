@@ -185,10 +185,6 @@ nav a{
     z-index: 1000;
 }
 
-.content:hover .static-content-text {
-    display: block;
-}
-
 .static-content-text ul {
     list-style-type: none;
     padding: 0;

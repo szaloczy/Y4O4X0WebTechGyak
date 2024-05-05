@@ -1,30 +1,8 @@
-
-
 const video = document.getElementById("intro");
 const  button = document.getElementById("toggleBtn");
 const pauseIcon = document.getElementById("pauseIcon");
 const playIcon = document.getElementById("playIcon");
-
 const images = document.querySelectorAll('.content img');
-
-
-
-// Minden kép elemhez eseménykezelő hozzáadása
-images.forEach(image => {
-    // Egér belépése eseménykezelő
-    image.addEventListener('mouseenter', () => {
-        // Képhez tartozó szöveges tartalom megjelenítése
-        const text = image.nextElementSibling;
-        text.style.display = 'block';
-    });
-
-    // Egér kilépése eseménykezelő
-    image.addEventListener('mouseleave', () => {
-        // Képhez tartozó szöveges tartalom elrejtése
-        const text = image.nextElementSibling;
-        text.style.display = 'none';
-    });
-});
 
 document.addEventListener('DOMContentLoaded', function(){
     let form = document.getElementById('popup-form');
@@ -37,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function(){
         let email = document.getElementById('email').value;
         let bornDate = document.getElementById('dateOB').value;
         let gender = document.querySelector('input[name="gender"]:checked').value;
+        let satisfactionInput = document.getElementById('satisfaction');
+
+        satisfactionInput.addEventListener('input', function() {
+            let value = satisfactionInput.value;
+            document.getElementById('satisfactionValue').textContent = value;
+        });
 
         const dataList = document.querySelector('#watch');
         const options = dataList.querySelectorAll('option');
@@ -55,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function(){
                              '<p><strong>Born date:</strong> ' + bornDate + '</p>' + 
                              '<p><strong>Gender:</strong> ' + gender + '</p>' + 
                              '<p><strong>Favourite watch:</strong> ' + favouriteWatches[0] + '</p>' +
+                             '<p><strong>Satisfaction:</strong> '+ satisfactionInput.value + '</p>' +
                              '<p><strong>Message:</strong> ' + message + '</p>';
         displayData.appendChild(datasDiv);
 
@@ -78,12 +63,6 @@ video.addEventListener("click", event => {
 });
 
 $(document).ready(function() {
-
-    $('.content').mouseenter(function() {
-        $(this).find('.content-text').show();
-    }).mouseleave(function() {
-        $(this).find('.content-text').hide();
-    });
 
     $('#formBtn').hover(function() {
         $(this).stop().animate({ opacity: 0.7 }, 'fast'); 
