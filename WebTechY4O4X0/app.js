@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function(){
         form.style.display='none';
     });
 });
+
 function toggleVideo(){
     if (video.paused) {
         video.play();
@@ -76,12 +77,6 @@ $(document).ready(function() {
 
     $('#satisfaction').on('input', function() {
         $('#satisfactionValue').text($(this).val());
-    });
-
-    $('.menu-item').mouseenter(function() {
-        $(this).stop().animate({ fontSize: '24px' }, 200);
-    }).mouseleave(function() {
-        $(this).stop().animate({ fontSize: '18px' }, 200); 
     });
 
     $(document).mouseup(function(e) {

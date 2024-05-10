@@ -5,21 +5,21 @@
             "title":"Baume et Mercier - A. Lange & Söhne",
             "release" : 1990,
             "img" : "/assets/baume1.png",
-            "description":"A. Lange & Söhne creates outstanding mechanical timepieces that feature challenging complications and follow a clear and classical design line. Innovative engineering skills and traditional craftsmanship at the highest level guarantee a state-of-the-art calibre design with meticulously hand-finished movements and utmost mechanical precision."
+            "description":"Az A. Lange & Söhne kivételes mechanikus időmérőket készít, amelyek összetett komplikációkat mutatnak és egyértelmű és klasszikus design vonalat követnek. Az innovatív mérnöki képességek és a legmagasabb szintű hagyományos kézművesség garantálják a legmodernebb kalibertervezést, a precízen kézi befejezett mozgásokat és a legnagyobb mechanikai pontosságot."
         },
         {
             "id": 2,
             "title": "Baume et Mercire - Classima",
             "release": 1998,
             "img": "/assets/baume2.png",
-            "description": "Be ahead of the curve with this prestigious timepiece from the Classima collection by Baume & Mercier. The face of this watch will entice you with With anti-reflective coating, Scratch resistant sapphire crystal and Roman numerals, Indexes to denote the time. Furthermore, the Enamel dial of the watch splendidly completes the face, with a Polished bezel to declare its superior craftsmanship. The Stainless steel material of the band finishes this piece with style that will never go out of style. For adventure enthusiasts, this watch has water resistance up to 150 ft (50 meter)."
+            "description": "Légy az idő előtt ezzel a presztízses időmérővel a Baume & Mercier Classima kollekciójából. Az óra számlapja elvarázsolja Önt az anti-reflexiós bevonattal, karcolásálló zafírkristállyal és római számokkal, indexekkel, hogy az időt jelezze. Továbbá, az óra zománcozott számlapja pompásan kiegészíti az arcát, a polírozott tok pedig kihirdeti a kiváló kézművességét. Az óra rozsdamentes acél szíja stílusosan fejezi be ezt a darabot, amely sosem megy ki a divatból. Kalandkedvelők számára ez az óra vízállósággal rendelkezik akár 150 láb (50 méter) mélységig."
           },
           {
             "id": 3,
             "title": "Baume et Mercire - Riviera",
             "release": 2011,
             "img": "/assets/baume3.png",
-            "description": "Baume & Mercier presented the Riviera as early as 1973, and in 2021 it appeared in its new, authentic version: while the silhouette of the original watch is recognisable, today's Riviera keeps up with the times both visually and technically. The typical twelve-sided bezel and the uniquely decorated dial make the watch an eye-catcher."
+            "description": "A Baume & Mercier már 1973-ban bemutatta a Riviera modellt, és 2021-ben megjelent az új, autentikus verziójában: míg az eredeti óra alakja felismerhető, a mai Riviera lépést tart a korral mind vizuálisan, mind technikailag. A jellegzetes tizenkét oldalú tok és az egyedi díszített számlap teszi az órát vonzóvá."
 
           }
     ]

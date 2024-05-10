@@ -50,6 +50,7 @@ function prevSlide(){
 }
 
 function nextSlide(){
+    clearInterval(intervalId);
     slideIndex++;
     showSlide(slideIndex);
 }
@@ -72,4 +73,3 @@ $(document).ready(function() {
         }
     });
 });
-

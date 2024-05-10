@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
     
     let filePath = '.' + req.url;
     if (filePath === './') {
-        filePath = './index.html'; // Ha a gyökérkönyvtárban van az index.html
+        filePath = './index.html';
     }
 
     const extname = path.extname(filePath);

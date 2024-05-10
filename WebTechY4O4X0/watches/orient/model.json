@@ -5,21 +5,21 @@
             "title":"Orient - Bambino II",
             "release" : 2022,
             "img" : "/assets/orient1.png",
-            "description":"Orient's Bambino model featuring a 38mm case size first premiered in 2022 and has since been one of the bestseller timepieces for the watch brand. Now, Orient has readied a new iteration of the Bambino in an array of new colorways, along with a new case size of 38.4mm."
+            "description":"Az Orient Bambino modellje, amely 38 mm-es tokmérettel rendelkezik, először 2022-ben debütált, és azóta az egyik legkelendőbb időmérő volt a márka számára. Most az Orient új változatot készített a Bambino sorozatban új színek széles választékával, valamint egy új, 38,4 mm-es tokmérettel."
         },
         {
             "id": 2,
             "title": "Orient - Star Contemporary",
             "release": 2014,
             "img": "/assets/orient2.png",
-            "description": "Orient Star's Modern Skeleton has been a bestseller around the world since its launch in 2014. Joining the collection in its 10th year, the new models are characterised by dial colours that complement the metallic textures of the case and other parts of the watch."
+            "description": "Az Orient Star Modern Skeleton az egész világon kedvelt bestseller volt az 2014-es bemutatása óta. A kollekcióban való csatlakozásával a 10. évfordulóját ünneplő új modelleket az óralap színei jellemzik, amelyek harmonizálnak a tok és az óra más részeinek fémtextúrájával."
           },
           {
             "id": 3,
             "title": "Orient - Sun and Moon Version 3",
             "release": 2000,
             "img": "/assets/orient3.png",
-            "description": "Rose gold-tone stainless steel case with a brown leather strap. Fixed rose gold-tone bezel. Brown dial with silver-tone hands and Roman numeral hour markers. Minute markers around the outer rim. Dial Type: Analog. Date display at the 8 o'clock position. Two sub-dials displaying: day of the week and day/night indicator. Orient calibre F6B24 automatic movement with a 40-hour power reserve. Scratch resistant sapphire crystal."
+            "description": "Rózsaszín arany árnyalatú rozsdamentes acél tok barna bőrszíjjal. Rögzített rózsaszín arany árnyalatú tok. Barna színű óralap ezüst színű mutatókkal és római számokkal. Percmutatók az óralap külső peremén. Óratípus: Analóg. Dátumkijelzés a 8 óra pozíciójában. Két mellékóra jelenik meg: a hét napja és a nappal/éjszaka jelző. Orient F6B24 automatikus mozgás 40 órás tartalékkal. Karcálló zafírkristály."
           }
     ]
 }

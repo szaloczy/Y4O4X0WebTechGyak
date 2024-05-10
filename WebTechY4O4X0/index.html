@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,11 @@
     <title>WatchOut</title>
 
     <style>
+        .menu-item {
+            font-size: 22px;
+            color: white;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -43,11 +48,19 @@
         <header class="main-title">WatchOut</header>
         <hr>
         <div class="navbar">
-            <h3 class="menu-item">HOME</h3>
-            <h3 class="menu-item"><a href="watches/rolex/rolex.html">ROLEX</a></h3>
-            <h3 class="menu-item"><a href="watches/orient/orient.html">ORIENT</a></h3>
-            <h3 class="menu-item"><a href="watches/cartier/cartier.html">CARTIER</a></h3>
-            <h3 class="menu-item"><a href="watches/baume/baume.html">BAUME</a></h3>
+            <h3 class="menu-item">Főoldal</h3>
+            <div class="dropdown">
+            <h3 class="menu-item">Márkáink</h3>
+            <div class="dropdown-content">
+            <h3 class="brand"><a href="watches/rolex/rolex.html">ROLEX</a></h3>
+            <h3 class="brand"><a href="watches/orient/orient.html">ORIENT</a></h3>
+            <h3 class="brand"><a href="watches/cartier/cartier.html">CARTIER</a></h3>
+            <h3 class="brand"><a href="watches/baume/baume.html">BAUME</a></h3>
+            </div>
+            </div>
+            <h3 class="menu-item"><a href="#func">Funkcionalitás</a></h3>
+            <h3 class="menu-item"><a href="#mov">Működés</a></h3>
+            <h3 class="menu-item"><a href="#forras">Kérdőív</a></h3>
         </div>
     </nav>
 
@@ -60,22 +73,21 @@
             </button>
             <aside class="intro-text">
                 <span class="intro-text-title">WatchOut</span> <br><br>
-                Join us in ushering in a new era for watch collectors. Discover our locations, global community,
-                 curated collections - both new and collectible pre-owned - and let's talk watches.
+                Csatlakozz hozzánk abban, hogy új korszakot nyissunk az óra gyűjtők számára. Fedezd fel helyszíneinket, globális közösségünket, gondosan összeállított kollekcióinkat - mind újakat, mind pedig gyűjteménybe tartozó előre használt darabokat - és beszéljünk órákról.
             </aside>
         </div>
     </div>
 
 
     <article class="introduction">
-        <h1>Welcome to the World of Watches!</h1>
-        <p>This page showcases the functionality of watches and highlights prominent brands such as Rolex, Orient, Cartier, and Baum.</p>
-        <p>The world of watches is exciting and diverse. Behind every timepiece lies a unique mechanism capable of precise timekeeping and stylish aesthetics.</p>
-        <p>Explore the table below to learn more about these watches and their operations!</p>
+        <h1>Üdvözöllek az Órák Világában!</h1>
+        <p>Ez az oldal bemutatja az órák funkcionalitását, és kiemeli a jelentős márkákat, mint például a Rolex, Orient, Cartier és Baum.</p>
+        <p>Az órák világa izgalmas és változatos. Minden időmérő mögött egyedi mechanizmus rejlik, amely precíz időmérésre és stílusos esztétikára képes.</p>
+        <p>Fedezd fel az alábbi táblázatot, hogy többet megtudj ezekről az órákról és működésükről!</p>
     </article>
 
     <div class="collection-container">
-        <div class="collection-title">Watches By Functionality</div>
+        <div id="func" class="collection-title">Órák funkcionalitás szerint</div>
         <hr>
         <div class="table-container">
             <table>
@@ -85,13 +97,13 @@
                             <img src="assets/analogFunc.png" alt="">
                         </div>
                         <div class="static-content-text">
-                            <div class="static-content-top-left">Analogue</div>
-                            <div class="static-content-middle"><span class="static-clock-feature">Standout feature:</span> Representation of the classic & traditional side of timepieces</div>
+                            <div class="static-content-top-left">Analóg</div>
+                            <div class="static-content-middle"><span class="static-clock-feature">Kiemelkedő jellemző:</span> Az időmérők klasszikus és hagyományos oldalának megtestesítése</div>
                             <div class="static-content-list">
                                 <ul>
-                                    <li>Traditional clock face</li>
-                                    <li>Three-hand movement</li>
-                                    <li>For every budget</li>
+                                    <li>Hagyományos óralap</li>
+                                    <li>Három mutató mozgás</li>
+                                    <li>Pénztárca barát</li>
                                 </ul>
                             </div>
                         </div>
@@ -101,13 +113,13 @@
                             <img src="assets/digitalfunc.png" alt="">
                         </div>
                         <div class="static-content-text">
-                            <div class="static-content-top-left">Digital</div>
-                            <div class="static-content-middle"><span class="static-clock-feature">Standout feature:</span> An electronic display</div>
+                            <div class="static-content-top-left">Digitális</div>
+                            <div class="static-content-middle"><span class="static-clock-feature">Kiemelkedő jellemző:</span> Elektronikus kijelző</div>
                             <div class="static-content-list">
                                 <ul>
-                                    <li>Time in numerical digits</li>
-                                    <li>Packed with features like a GPS, pedometer & more</li>
-                                    <li>For every budget</li>
+                                    <li>Számjegyekkel megjelenített idő</li>
+                                    <li>Teli extrákkal, mint például GPS, lépésszámláló és még sok más</li>
+                                    <li>Pénztárca barát</li>
                                 </ul>
                             </div>
                         </div>
@@ -119,14 +131,14 @@
                             <img src="assets/chonographfunc.png" alt="">
                         </div>
                         <div class="static-content-text">
-                            <div class="static-content-top-left">Chronograph</div>
-                            <div class="static-content-middle"><span class="static-clock-feature">Standout feature:</span> More complications & functions with subdials often include stopwatches, tachymeters & more</div>
+                            <div class="static-content-top-left">Kronográf</div>
+                            <div class="static-content-middle"><span class="static-clock-feature">Kiemelkedő jellemző:</span> Stoppereket, tachymetereket és még sok mást tartalmaz</div>
                             <div class="static-content-list">
                                 <ul>
-                                    <li>Powered solely by any light</li>
-                                    <li>Doesn't require battery replacements</li>
-                                    <li>Accurate to about +/- 15 seconds a month</li>
-                                    <li>Quartz crystal timekeeping</li>
+                                    <li>Kizárólag fényenergiával működtethető</li>
+                                    <li>Nem igényel elemcserét</li>
+                                    <li>Körülbelül +/- 15 másodperces pontosság havonta</li>
+                                    <li>Kvarc kristály alapú időmérés</li>
                                 </ul>
                             </div>
                         </div>
@@ -136,13 +148,13 @@
                             <img src="assets/hybridfunc.png" alt="">
                         </div>
                         <div class="static-content-text">
-                            <div class="static-content-top-left">Hybrid</div>
-                            <div class="static-content-middle"><span class="static-clock-feature">Standout feature:</span> Combines digital features with traditional watch mechanics</div>
+                            <div class="static-content-top-left">Hibrid</div>
+                            <div class="static-content-middle"><span class="static-clock-feature">Kiemelkedő jellemző:</span> Digitális funkciókat ötvöz a hagyományos óraművekkel</div>
                             <div class="static-content-list">
                                 <ul>
-                                    <li>Analogue & digital combo</li>
-                                    <li>Similar smart watch functionality</li>
-                                    <li>For every budget</li>
+                                    <li>Analóg és digtális kombináció</li>
+                                    <li>Hasonló okosóra funkcionalitás</li>
+                                    <li>Pénztárca barát</li>
                                 </ul>
                             </div>
                         </div>
@@ -154,12 +166,13 @@
    
     <section class="banner">
             <div class="banner-text">
-                Explore the elegant world of wristwatches, where craftsmanship meets sophistication in every detail.  <br>
+                Fedezd fel az elegáns órák világát, ahol a mesteri kézművesség találkozik a kifinomultsággal minden részletben.<br>
             </div>
     </section>
 
-    <div class="collection-container">
-            <div class="collection-title">Watches By Movement</div>
+    <div id="mov"  class="collection-container">
+            <div class="collection-title">
+                Órák mozgás szerint</div>
             <hr>
             <div class="table-container">
                 <table>
@@ -168,13 +181,13 @@
                             <div class="content">
                                 <img src="assets/automatic.png" alt="">
                                 <div class="content-text">
-                                    <div class="content-top-left">Automatic</div>
-                                    <div class="content-middle"><span class="clock-feature">Standout feature:</span> Self-winding via kinetic energy.</div>
+                                    <div class="content-top-left">Autómatikus</div>
+                                    <div class="content-middle"><span class="clock-feature">Kiemelkedő jellemző:</span> Automatikusan felhúzódik a kinetikus energia segítségével.</div>
                                     <div class="content-list">
                                         <ul>
-                                            <li>Automatic watches store energy automatically by utilising the movement of your wrist</li>
-                                            <li>Accurate to about +/- 20 seconds a day</li>
-                                            <li>Available for all budgets</li>
+                                            <li>Az automata órák automatikusan tárolják az energiát a csukló mozgásának kihasználásával.</li>
+                                            <li>Körülbelül +/- 20 másodperces pontosság naponta</li>
+                                            <li>Pénztárca barát</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -184,14 +197,14 @@
                             <div class="content">
                                 <img src="assets/mechanikal.png" alt="">
                                 <div class="content-text">
-                                    <div class="content-top-left">Mechanikal</div>
-                                    <div class="content-middle"><span class="clock-feature">Standout feature:</span> intricate series of tiny components work together to power the timepiece</div>
+                                    <div class="content-top-left">Mechanikus</div>
+                                    <div class="content-middle"><span class="clock-feature">Kiemelkedő jellemző:</span>Bonyolult, apró alkatrészek dolgoznak együtt az időmérő működésének hajtására</div>
                                     <div class="content-list">
                                         <ul>
-                                            <li>Mechanical movements never require batteries because they require periodical hand-winding to operate</li>
-                                            <li>AAccurate to about +/-20 seconds a day</li>
-                                            <li>Super reliable and just plain cool to look at</li>
-                                            <li>Higher price tag than other movements</li>
+                                            <li>A mechanikus mozgás sosem igényel elemeket, mert időnkénti kézi felhúzást igényel a működéshez.</li>
+                                            <li>Körülbelül +/- 20 másodperces pontosság naponta</li>
+                                            <li>Megbízható és egyszerűen lenyűgöző ránézés is.</li>
+                                            <li>Magasabb ár</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -203,14 +216,13 @@
                             <div class="content">
                                 <img src="assets/solar.png" alt="">
                                 <div class="content-text">
-                                    <div class="content-top-left">Solar</div>
-                                    <div class="content-middle"><span class="clock-feature">Standout feature:</span> The abality to convert light energy into electronic energy</div>
+                                    <div class="content-top-left">Napelemes</div>
+                                    <div class="content-middle"><span class="clock-feature">Kiemelkedő jellemző:</span> Fényenergia átalakítása elektronikus energiává</div>
                                     <div class="content-list">
                                         <ul>
-                                            <li>Powered solely by any light</li>
-                                            <li>Doesn't require battery replacements</li>
-                                            <li>Accurate to about +/- 15 seconds a month</li>
-                                            <li>Quartz crystal timekeeping</li>
+                                            <li>Kizárólag fényenergiával működtethető</li>
+                                            <li>Körülbelül +/- 15 másodperces pontosság havonta</li>
+                                            <li>Kvarc kristály alapú időmérés</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -222,13 +234,12 @@
                                 <img src="assets/quartz.png" alt="">
                                 <div class="content-text">
                                     <div class="content-top-left">Quartz</div>
-                                    <div class="content-middle"><span class="clock-feature">Standout feature:</span> Very accurate and require minimal maintenance</div>
+                                    <div class="content-middle"><span class="clock-feature">Kiemelkedő jellemző:</span> Nagyon pontosak és minimális karbantartást igényelnek</div>
                                     <div class="content-list">
-                                        <ul>
-                                            <li>The most affordable watch movement</li>
-                                            <li>Uses electronic circuits regulated by quartz crystal</li>
-                                            <li>Requires a battery to function & battery replacement every 2-3 years</li>
-                                            <li>Accurate to about +/- 15 seconds a month</li>
+                                        <ul>             
+                                            <li>Elektronikus áramköröket használ, melyeket kvarckristály szabályoz.</li>
+                                            <li>Elemet igényel a működéshez, és elemcsere szükséges 2-3 évente.</li>
+                                            <li>Körülbelül +/- 15 másodperces pontosság havonta</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -247,38 +258,38 @@
         </div>
         <div class="gallery-item">
             <img src="https://images.pexels.com/photos/2919052/pexels-photo-2919052.jpeg?auto=compress&cs=tinysrgb&w=300" alt="gallery image" class="gallery-img">
-            <h1 class="gallery-title">Be Yourself!</h1>
+            <h1 class="gallery-title">Légy Önmagad!</h1>
         </div>
         <div class="gallery-item">
-            <h1 class="gallery-title">Join Us!</h1>
+            <h1 class="gallery-title">Csatlakozz Hozzánk!</h1>
             <img src="https://images.pexels.com/photos/4405244/pexels-photo-4405244.jpeg?auto=compress&cs=tinysrgb&w=300" alt="gallery image" class="gallery-img">
         </div>
     </div>
 
     <div class="fromBtn-container">
-        <button id="formBtn">Share your experience</button>
+        <button id="formBtn">Kérdőív kitöltése</button>
     </div>
 
     <div id="popup-form">
-        <h2>What's Your Experience?</h2>
-        <form action="">
-            <label for="name">Name:</label>
+        <h2 id="urlap">Mi volt a tapasztalatod?</h2>
+        <form  action="">
+            <label for="name">Név:</label>
             <input type="text" id="name" name="name"><br>
             <label for="name" class="error" id="error-name"></label><br>
             <label for="email">E-mail:</label>
             <input type="text" id="email" name="email"><br>
             <label for="email" class="error" id="error-email"></label><br>
     
-            <label for="dateOB">Date of birth:</label>
+            <label for="dateOB">Születési idő:</label>
             <input type="date" id="dateOB" name="dateOB" min="1900-01-01" max="2025-01-01"><br><br>
 
             <input type="radio" id="gender" name="gender">
-            <label for="gender">Male</label>
+            <label for="gender">Férfi</label>
             
             <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br><br>
+            <label for="female">Nő</label><br><br>
 
-            <label for="watches">Favourite watch:</label>
+            <label for="watches">Kedvenc márka:</label>
             <datalist id="watch">
               <option value="Rolex">
               <option value="Orient">
@@ -287,19 +298,19 @@
             </datalist>
             <input list="watch" id="favWatch" name="favWatch"><br><br>
             
-            <label for="color">Favourite color:</label>
+            <label for="color">Kedvenc szín:</label>
             <input type="color" id="selectColor" name="selectColor"><br><br>
 
-            <label for="satisfaction">How satisfied are you with the website? (1-10)</label>
+            <label for="satisfaction">Mennyire volt elégedett az oldallal? (1-10)</label>
             <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="5">
             <div id="satisfactionValue">5</div>
 
-            <label for="message">Message:</label><br>
+            <label for="message">Üzenet:</label><br>
             <textarea id="message" name="message"></textarea><br>
 
             <label for="agree">
         <input type="checkbox" id="agree" name="agree">
-        I agree to allow the usage of my data.
+        Hozzájárulok adataim kezeléséhez.
     </label><br><br>
 
             <input id="form-btn" type="reset" value="Reset">
@@ -310,9 +321,9 @@
     <div id="displayData"></div>
 
     <footer>
-        <div class="footer-left">
+        <div id="forras" class="footer-left">
             <div class="footer-menu">
-                <h1 class="footer-menu-title">Source</h1>
+                <h1 class="footer-menu-title">Források</h1>
                 <ul class="footer-menu-list">
                     <li><a href="https://www.thewatchbox.com/">https://www.thewatchbox.com/</a></li>
                     <li><a href="https://www.thewatchpages.com/">https://www.thewatchpages.com/</a></li>
@@ -320,7 +331,7 @@
                 </ul>
             </div>
             <div class="footer-menu">
-                <h1 class="footer-menu-title">Brands</h1>
+                <h1 class="footer-menu-title">Márkák</h1>
                 <ul class="footer-menu-list">
                     <li class="footer-list-item">Rolex</li>
                     <li class="footer-list-item">Orient</li>
@@ -331,14 +342,14 @@
         </div>
         <div class="footer-right">
             <div class="footer-right-menu">
-                <h1 class="footer-menu-title">Subscribe to our newsletter</h1>
+                <h1 class="footer-menu-title">Iratkozzon fel hírlevelünkre</h1>
                 <div class="footer-mail">
                     <input type="text" placeholder="your@email.com" class="footer-input">
-                    <button class="footer-button">Join!</button>
+                    <button class="footer-button">Csatlakozás!</button>
                 </div>
             </div>
             <div class="footer right-menu">
-                <h1 class="footer-menu-title">Follow Us</h1>
+                <h1 class="footer-menu-title">Kövessen minket</h1>
                 <div class="footer-icons">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-instagram"></i>
@@ -346,7 +357,7 @@
                 </div>
             </div>
             <div class="footer-right-menu">
-                <span class="copyright">@szaloczy. All rights reserved. 2024</span>
+                <span class="copyright">@szaloczy. Minden jog fenntartva. 2024</span>
             </div>
         </div>
     </footer>

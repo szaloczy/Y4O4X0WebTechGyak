@@ -5,15 +5,10 @@ let intervalId = null;
 let models = [];
 
 $(document).ready(function() {
-    $.ajax({
-        url: "model.json", 
-        dataType: "json",
-        success: function(data) {
-            models = data.models;
-        },
-        error: function(xhr, status, error) {
-            console.error("AJAX hiba:", status, error);
-        }
+    $.getJSON("model.json", function(data) {
+        models = data.models;
+    }).fail(function(status, error) {
+        console.error("AJAX hiba:", status, error);
     });
 });
 
@@ -66,6 +61,7 @@ function prevSlide(){
 function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
+    clearInterval(intervalId);
 }
 
 $('.menu-item').mouseenter(function() {

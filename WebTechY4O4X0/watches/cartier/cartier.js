@@ -7,11 +7,10 @@ let models = [];
 $(document).ready(function() {
 
     $('.menu-item').mouseenter(function() {
-        $(this).stop().animate({ fontSize: '24px' }, 200); // Betűméret növelése animációval az egér fölé kerüléskor
+        $(this).stop().animate({ fontSize: '24px' }, 200); 
     }).mouseleave(function() {
-        $(this).stop().animate({ fontSize: '18px' }, 200); // Betűméret visszaállítása animációval az egér elhagyásakor
+        $(this).stop().animate({ fontSize: '18px' }, 200);
     });
-
 
     $.ajax({
         url: "model.json", 
@@ -72,6 +71,7 @@ function prevSlide(){
 }
 
 function nextSlide(){
+    clearInterval(intervalId);
     slideIndex++;
     showSlide(slideIndex);
 }

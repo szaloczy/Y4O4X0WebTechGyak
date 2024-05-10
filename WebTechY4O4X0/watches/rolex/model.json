@@ -5,21 +5,21 @@
             "title":"Rolex - submariner",
             "release" : 1954,
             "img" : "/assets/rolex1.png",
-            "description":"The first Submariner was introduced to the public in 1954 at the Basel Watch Fair. It was the first watch to be waterproof up to 100 metres (330 ft). The Rolex Submariner is considered a classic among wristwatches, manufactured by one of the most widely recognized luxury brands in the world."
+            "description":"Az első Submariner 1954-ben debütált a közönség előtt a Baseli Órakiállításon. Ez volt az első olyan óra, amely 100 méterig (330 láb) vízálló volt. A Rolex Submariner a világ egyik legismertebb luxusmárkája által gyártott órák között klasszikusnak számít."
         },
         {
             "id": 2,
             "title": "Rolex - GMT Master 2",
             "release": 2007,
             "img": "/assets/rolex2.png",
-            "description": "Leiden, The Netherlands - October 11, 2007: Product shot of a Rolex GMT Master 2 wristwatch for men on white background. This watch has a gold case, a gold strap and is water resistant up to 30 meters.The GMT-Master II is the ultimate cosmopolitan watch. With a dedicated 24-hour hand and a 24-hour graduated two-colour rotatable bezel, it displays a second time zone in addition to the conventional time."
+            "description": "Leiden, Hollandia - 2007. október 11.: Termékkép egy férfiaknak szánt Rolex GMT Master 2 karóráról fehér háttérrel. Ez az óra arany tokkal és arany szíjjal rendelkezik, és 30 méterig vízálló. A GMT-Master II az ultimátum metropolisz óra. Egy dedikált 24 órás mutatóval és egy 24 órás graduált két színű forgatható tokkal rendelkezik, így második időzónát is megjelenít a hagyományos idő mellett."
           },
           {
             "id": 3,
             "title": "Rolex - submariner - Sea - Dweller",
             "release": 2001,
             "img": "/assets/rolex3.png",
-            "description": "Gold is coveted for its lustre and nobility. Steel reinforces strength and reliability. Together, they harmoniously combine the best of their properties A true Rolex signature, Rolesor has featured on Rolex models since the early 1930s, and was trademarked as a name in 1933. It is one of the prominent pillars of the Oyster collection."
+            "description": "Az aranyat fénye és nemesessége miatt becsülik. Az acél erőt és megbízhatóságot biztosít. Együttesen összehangolják legjobb tulajdonságaikat. Az igazi Rolex aláírás, a Rolesor már az 1930-as évek elejétől jelen van a Rolex modelleken, és már 1933-ban védjegyként került bejegyzésre. Ez az Oyster kollekció kiemelkedő pillére."
           }
     ]
 }
