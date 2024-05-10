@@ -1,0 +1,26 @@
+{
+    "kurzusnev": "Webtechnológia alapjai",
+    "oktato": "Dr Bednarik László",
+    "szak": "MI",
+    "idopont": {
+        "nap": "Hétfő",
+        "tol": "14:00",
+        "ig": "16:00"
+    },
+    "helyszin": "Inf. 103",
+    "cim": {
+        "street": "Egyetemváros",
+        "city": "Miskolc",
+        "code": "1021"
+    },
+    "phone number": [
+        {
+            "type": "Vezetékes",
+            "number": "0321 232 323"
+        },
+        {
+            "type": "Mobil",
+            "number": "032 124 324"
+        }
+    ]
+}

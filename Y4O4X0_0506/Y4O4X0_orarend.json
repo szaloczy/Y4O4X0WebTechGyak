@@ -1,315 +1,177 @@
-[
-    {
-        "kurzusnev": "Webtechnológia alapjai",
-        "oktato": "Dr Bednarik László",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Hétfő",
-            "tol": "14:00",
-            "ig": "16:00"
-        },
-        "helyszin": "Inf. 103",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
+{
+    "SZK orarend": {
+        "kurzus": [
             {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
+            "kurzusnev" : "Szoftver technológia gyakorlat",
+            "idopont" : {
+                "nap" : "Hétfő",
+                "tol": "10",
+                "ig" : "12"
             },
+            "helyszin" : "Inf. 202",
+            "oktato": "Dr Tompa Tamás",
+            "szak" : "MI"
+            },
+            
             {
-                "type": "Mobil",
-                "number": "032 124 324"
+            "kurzusnev" : "Webtechnológia alapjai",
+            "idopont": {
+                "nap":"Hétfő",
+                "tol": "14",
+                "ig":"16"
+            },
+            "helyszin":"Inf. 103",
+            "oktato":"Dr Bednarik László",
+            "szak":"MI"
+            },
+
+            {
+            "kurzusnev":"Adatbázis rendszerek II",
+            "idopont": {
+                "nap":"Hétfő",
+                "tol": "16",
+                "ig":"18"
+            },
+            "helyszin":"Inf. 101",
+            "oktato":"Mészáros Gergő",
+            "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Modern fizika",
+                "idopont": {
+                    "nap":"Kedd",
+                    "tol": "8",
+                    "ig":"10"
+                },
+                "helyszin":"A1 320",
+                "oktato":"Nagy Ádám",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Java programozás",
+                "idopont": {
+                    "nap":"Kedd",
+                    "tol": "10",
+                    "ig":"12"
+                },
+                "helyszin":"Inf. 102",
+                "oktato":"Szűcs Miklós",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Numerikus analízis",
+                "idopont": {
+                    "nap":"Kedd",
+                    "tol": "12",
+                    "ig":"14"
+                },
+                "helyszin":"A1. XXXII",
+                "oktato":"Földvári Attila",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Numerikus analízis",
+                "idopont": {
+                    "nap":"Kedd",
+                    "tol": "14",
+                    "ig":"16"
+                },
+                "helyszin":"A1. 200",
+                "oktato":"Földvári Attila",
+                "szak":"MI"
+            },
+
+
+            {
+                "kurzusnev":"Szoftver technológia gyakorlat",
+                "idopont": {
+                    "nap":"Szerda",
+                    "tol": "8",
+                    "ig":"9"
+                },
+                "helyszin":"A1 301",
+                "oktato":"Dr Tompa Tamás",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Adatbázis rendszerek II",
+                "idopont": {
+                    "nap":"Szerda",
+                    "tol": "10",
+                    "ig":"12"
+                },
+                "helyszin":"A2. XXXVI",
+                "oktato":"Dr Kovács László",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Biztonság és védelem az informatikban",
+                "idopont": {
+                    "nap":"Szerda",
+                    "tol": "12",
+                    "ig":"14"
+                },
+                "helyszin":"A1. XXXII",
+                "oktato":"Wagner György",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Idegennyelv kompetencia fejlesztő",
+                "idopont": {
+                    "nap":"Csütörtök",
+                    "tol": "8",
+                    "ig":"10"
+                },
+                "helyszin":"A1. 315",
+                "oktato":"Varga Orsoly",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Java programozás",
+                "idopont": {
+                    "nap":"Csütörtök",
+                    "tol": "10",
+                    "ig":"12"
+                },
+                "helyszin":"Inf. 101",
+                "oktato":"Csépányi Fürjes László",
+                "szak":"MI"
+            },
+
+            {
+                "kurzusnev":"Biztonság és védelem az informatikában",
+                "idopont": {
+                    "nap":"Csütörtök",
+                    "tol": "12",
+                    "ig":"14"
+                },
+                "helyszin":"Inf. 103",
+                "oktato":"Wagner György",
+                "szak":"MI"
             }
         ]
     },
-    {
-        "kurzusnev": "Adatbázis rendszerek II",
-        "oktato": "Mészáros Gergő",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Hétfő",
-            "tol": "16:00",
-            "ig": "18:00"
-        },
-        "helyszin": "Inf. 101",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
-            {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
-            },
-            {
-                "type": "Mobil",
-                "number": "032 124 324"
-            }
-        ]
+    "cim" :{
+        "street" : "Egyetemváros",
+        "city":"Miskolc",
+        "code":"1021"
     },
-    {
-        "kurzusnev": "Modern fizika",
-        "oktato": "Nagy Ádám",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Kedd",
-            "tol": "08:00",
-            "ig": "10:00"
+    "phone number": [
+        {
+            "type":"Vezetékes",
+            "number":"0321 232 323"
         },
-        "helyszin": "A1 320",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
-            {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
-            },
-            {
-                "type": "Mobil",
-                "number": "032 124 324"
-            }
-        ]
-    },
-    {
-        "kurzusnev": "Java programozás",
-        "oktato": "Szűcs Miklós",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Kedd",
-            "tol": "10:00",
-            "ig": "12:00"
-        },
-        "helyszin": "Inf. 102",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
-            {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
-            },
-            {
-                "type": "Mobil",
-                "number": "032 124 324"
-            }
-        ]
-    },
-    {
-        "kurzusnev": "Numerikus analízis",
-        "oktato": "Földvári Attila",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Kedd",
-            "tol": "12:00",
-            "ig": "14:00"
-        },
-        "helyszin": "A1. XXXII",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
-            {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
-            },
-            {
-                "type": "Mobil",
-                "number": "032 124 324"
-            }
-        ]
-    },
-    {
-        "kurzusnev": "Numerikus analízis",
-        "oktato": "Földvári Attila",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Kedd",
-            "tol": "14:00",
-            "ig": "16:00"
-        },
-        "helyszin": "A1. 200",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
-            {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
-            },
-            {
-                "type": "Mobil",
-                "number": "032 124 324"
-            }
-        ]
-    },
-    {
-        "kurzusnev": "Szoftver technológia gyakorlat",
-        "oktato": "Dr Tompa Tamás",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Szerda",
-            "tol": "08:00",
-            "ig": "09:00"
-        },
-        "helyszin": "A1 301",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
-            {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
-            },
-            {
-                "type": "Mobil",
-                "number": "032 124 324"
-            }
-        ]
-    },
-    {
-        "kurzusnev": "Adatbázis rendszerek II",
-        "oktato": "Dr Kovács László",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Szerda",
-            "tol": "10:00",
-            "ig": "12:00"
-        },
-        "helyszin": "A2. XXXVI",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
-            {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
-            },
-            {
-                "type": "Mobil",
-                "number": "032 124 324"
-            }
-        ]
-    },
-    {
-        "kurzusnev": "Biztonság és védelem az informatikában",
-        "oktato": "Wagner György",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Szerda",
-            "tol": "12:00",
-            "ig": "14:00"
-        },
-        "helyszin": "A1. XXXII",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
-            {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
-            },
-            {
-                "type": "Mobil",
-                "number": "032 124 324"
-            }
-        ]
-    },
-    {
-        "kurzusnev": "Idegennyelv kompetencia fejlesztő",
-        "oktato": "Varga Orsoly",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Csütörtök",
-            "tol": "08:00",
-            "ig": "10:00"
-        },
-        "helyszin": "A1. 315",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
-            {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
-            },
-            {
-                "type": "Mobil",
-                "number": "032 124 324"
-            }
-        ]
-    },
-    {
-        "kurzusnev": "Java programozás",
-        "oktato": "Csépányi Fürjes László",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Csütörtök",
-            "tol": "10:00",
-            "ig": "12:00"
-        },
-        "helyszin": "Inf. 101",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
-            {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
-            },
-            {
-                "type": "Mobil",
-                "number": "032 124 324"
-            }
-        ]
-    },
-    {
-        "kurzusnev": "Biztonság és védelem az informatikában",
-        "oktato": "Wagner György",
-        "szak": "MI",
-        "idopont": {
-            "nap": "Csütörtök",
-            "tol": "12:00",
-            "ig": "14:00"
-        },
-        "helyszin": "Inf. 103",
-        "cim": {
-            "street": "Egyetemváros",
-            "city": "Miskolc",
-            "code": "1021"
-        },
-        "phone number": [
-            {
-                "type": "Vezetékes",
-                "number": "0321 232 323"
-            },
-            {
-                "type": "Mobil",
-                "number": "032 124 324"
-            }
-        ]
-    }
-    
+        {
+            "type" : "Mobil",
+            "number": "032 124 324"
+        }
     ]
+}

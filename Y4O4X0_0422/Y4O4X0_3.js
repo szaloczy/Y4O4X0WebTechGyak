@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $("#adSzoveg").click(function(){
         $("#box").text("Mérnökinformatikus");
     });

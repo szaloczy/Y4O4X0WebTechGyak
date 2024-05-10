@@ -1,6 +1,16 @@
 var myAudio = document.getElementById("audio1");
 
 
+function tekerVideoba() {
+    var video = document.getElementById('audio1');
+    video.currentTime += 10;
+}
+
+function visszaTekerVideoba() {
+    var video = document.getElementById('audio1');
+    video.currentTime -= 10;
+}
+
 function playPause() { 
     if (myAudio.paused) 
     myAudio.play(); 
@@ -51,9 +61,13 @@ function veryFastRate(){
     myAudio.playbackRate =2.0;
 }
 
-function isFinished(){
-    if(myAudio.ended){
-        window.alert("A hanglejátszás befejeződöt");
+function ellenorizVideot() {
+    var video = document.getElementById('audio1');
+
+    if (video.ended) {
+        alert('A videó befejeződött!');
+    } else {
+        alert('A videó még nem fejeződött be.');
     }
 }
 
