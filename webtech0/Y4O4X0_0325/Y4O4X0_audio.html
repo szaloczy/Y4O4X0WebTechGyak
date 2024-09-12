@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="audio.css">
+</head>
+<body>
+    <header id="fejlec">Audió - zene, hang - lejátszása_Y4O4X0</header>
+    <section class="audio">
+        <audio controls id="audio1">
+            <source src="audio/jazzy.mp3" type="audio/ogg">
+        </audio>   
+          <br><br>
+          <button onclick="playPause()">lejátszás/szünet</button> 
+          <button onclick="tekerVideoba()">pozitív</button>
+          <button onclick="visszaTekerVideoba()">negatív</button> <br>
+          <button onclick="mute()">néma</button>
+          <button onclick="quite()">halk</button>
+          <button onclick="loud()">hangos</button>
+          <button onclick="verySlowRate()">nagyon lassú</button>
+          <button onclick="slowRate()">lassú</button>
+          <button onclick="normalRate()">normál</button>
+          <button onclick="fasterRate()">gyorsabb</button>
+          <button onclick="veryFast()">nagyon gyors</button> <br>
+
+          <button onclick="ellenorizVideot()">befejeződöt-e</button>
+          <button onclick="getLength()">audió hossza (mp)</button>
+         
+          <button onclick="getCurrentPosition()">jelenlegi pozíció</button>
+          <button onclick="jump()">ugrás másfél perchez</button>
+          
+          
+     </section>
+    <footer class="lablec">
+        <hr>
+        <a href="https://www.w3schools.com/tags/av_prop_playbackrate.asp">https://www.w3schools.com/tags/av_prop_playbackrate.asp</a>
+        <a href="https://www.w3schools.com/tags/ref_av_dom.asp">https://www.w3schools.com/tags/ref_av_dom.asp</a>
+        
+    </footer>
+    <script src="audio.js"></script>
+</body>
+</html>

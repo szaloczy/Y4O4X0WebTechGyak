@@ -1,0 +1,28 @@
+#urlap{
+    background-color: lightblue;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+#fejlec{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
+
+#urlap label{
+    padding: 10px;
+    margin: 10px;
+}
+
+#urlap button{
+    margin: 20px;
+    font-weight: 100;
+
+
+}
+
+button{
+    font-weight: bold;
+}

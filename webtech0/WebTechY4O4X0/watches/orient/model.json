@@ -1,0 +1,25 @@
+{
+    "models" : [
+        {
+            "id" : 1,
+            "title":"Orient - Bambino II",
+            "release" : 2022,
+            "img" : "/assets/orient1.png",
+            "description":"Az Orient Bambino modellje, amely 38 mm-es tokmérettel rendelkezik, először 2022-ben debütált, és azóta az egyik legkelendőbb időmérő volt a márka számára. Most az Orient új változatot készített a Bambino sorozatban új színek széles választékával, valamint egy új, 38,4 mm-es tokmérettel."
+        },
+        {
+            "id": 2,
+            "title": "Orient - Star Contemporary",
+            "release": 2014,
+            "img": "/assets/orient2.png",
+            "description": "Az Orient Star Modern Skeleton az egész világon kedvelt bestseller volt az 2014-es bemutatása óta. A kollekcióban való csatlakozásával a 10. évfordulóját ünneplő új modelleket az óralap színei jellemzik, amelyek harmonizálnak a tok és az óra más részeinek fémtextúrájával."
+          },
+          {
+            "id": 3,
+            "title": "Orient - Sun and Moon Version 3",
+            "release": 2000,
+            "img": "/assets/orient3.png",
+            "description": "Rózsaszín arany árnyalatú rozsdamentes acél tok barna bőrszíjjal. Rögzített rózsaszín arany árnyalatú tok. Barna színű óralap ezüst színű mutatókkal és római számokkal. Percmutatók az óralap külső peremén. Óratípus: Analóg. Dátumkijelzés a 8 óra pozíciójában. Két mellékóra jelenik meg: a hét napja és a nappal/éjszaka jelző. Orient F6B24 automatikus mozgás 40 órás tartalékkal. Karcálló zafírkristály."
+          }
+    ]
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <header id="fejlec" class="fejlec">
+        Rajzolás a vászonra Y4O4X0
+    </header>
+
+    <section id="tartalom">
+            <canvas id="SZKCanvas" width="700" height="350" style="border: 1px solid #000000;">
+                <img id="kep" style="width: 70px; height: 70px;" src="kepek/iit.jpg"  alt="Miskolci iit">
+            </canvas>
+    </section>
+
+    <footer id="lablec" class="lablec">
+        <hr>
+       <h3>Források:</h3>
+       <a href="https://www.w3schools.com/html/html5_canvas.asp">https://www.w3schools.com/html/html5_canvas.asp</a>
+       <a href="https://www.w3schools.com/html/html5_canvas.asp">https://www.w3schools.com/html/html5_canvas.asp</a>
+       <a href="https://www.w3schools.com/html/html5_canvas.asp">https://www.w3schools.com/html/html5_canvas.asp</a>
+
+    </footer>
+
+    <script>
+        window.onload = function(){
+            var szk = document.getElementById("SZKCanvas");
+            var szkx = szk.getContext("2d");
+
+            szkx.lineWidth = 5;
+            szkx.strokeStyle = "#0066ff";
+            szkx.strokeRect(80,180,200,120);
+
+            var gradient = szkx.createRadialGradient(175,87,10,200,100,75);
+
+            gradient.addColorStop("0","#ffcc00");
+            gradient.addColorStop("0.3","#6600ff");
+            gradient.addColorStop("1.0","#33ff33");
+
+            szkx.fillStyle = gradient;
+            szkx.fillRect(100,60,150,75);
+
+            
+            var c = document.getElementById("SZKCanvas");
+            var szkx = c.getContext("2d");
+            szkx.beginPath();
+            szkx.arc(450, 150, 65,0.3 * Math.PI,1.5*Math.PI);
+            szkx.lineWidth = 7;
+            szkx.strokeStyle="6633ff";
+            
+            szkx.stroke();
+
+            szkx.fillStyle="#ffcc33";
+            szkx.fill();
+
+            szkx.font = "30px Arial";
+            szkx.fillText("Mérnökinformatika 2024", 160, 30);
+
+            var img = document.getElementById("kep");
+            szkx.drawImage(img, 550, 200);
+        }
+
+    </script>
+</body>
+</html>
