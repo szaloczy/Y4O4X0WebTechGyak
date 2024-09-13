@@ -1,12 +1,17 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .card{
   border:1px solid rgb(141, 140, 140);
   border-radius: 10px;
   box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
   padding: 20px;
-  margin: 10px;
-  text-align: center;
+  margin: 10px auto;
   max-width: 250px;
-  display: inline-block;
+  text-align: center;
+  display:block;  
 }
 
 .card .card-image {
@@ -25,5 +30,25 @@
 .card .card-text{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: hsl(0, 86%, 37%);
+}
+
+.student{
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 1px solid hsla(0, 0%, 50%, 0.8);
+  margin: 5px;
+}
+
+.student p{
+  margin: 5px;
+}
+
+footer{
+  background-color: hsla(0, 0%, 50%, 0.8);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
 }
 

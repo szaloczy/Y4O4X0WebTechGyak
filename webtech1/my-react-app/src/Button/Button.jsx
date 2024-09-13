@@ -10,6 +10,7 @@ function Button(){
         borderRadius: "5px",
         border: "none",
         cursor: "pointer",
+        margin: "5px"
     }
 
     return(
