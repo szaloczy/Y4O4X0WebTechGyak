@@ -4,15 +4,23 @@ import Card from './Card'
 import Button from './Button/Button'
 import Student from './Student'
 import UserGreeting from './UserGreeting'
+import List from './List'
+import ProfilePicture from './ProfilePicture'
+import MyComponent from './MyComponent'
+import Counter from './Counter'
+
 
 function App() {
+
+  const fruits = [{id:1, name:"orange", caleroies: 95},
+    {id:2, name:"apple", caleroies: 45}, 
+    {id:3, name:"banan", caleroies: 159},
+];
+
   return(
     <>
     <Header></Header>
-    <Card></Card><br />
-    <Student name="Krisztián Szalóczy" age={22} isStudent={true} studies="University of Miskolc, Computer Science Bsc"></Student>
-    <UserGreeting isLoggedIn={true} username="Szalo"></UserGreeting>
-    <Button></Button>
+    <Counter></Counter>
     <Footer></Footer>
     </>
   );
