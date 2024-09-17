@@ -8,6 +8,7 @@ import List from './List'
 import ProfilePicture from './ProfilePicture'
 import MyComponent from './MyComponent'
 import Counter from './Counter'
+import ColorPicker from './ColorPickerComponent'
 
 
 function App() {

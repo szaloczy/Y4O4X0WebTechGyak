@@ -5,15 +5,19 @@ function Counter(){
     const [num, setNum] = useState(0);
 
     const increment = () => {
-        setNum(num + 1);
+        setNum(n => n + 1); //UPDATER FUNCTIONS
+        setNum(n => n + 1);
+        setNum(n => n + 1);
     }
 
     const decrement = () => {
-        setNum(num - 1);
+        setNum(n => n - 1);
+        setNum(n => n - 1);
+        setNum(n => n - 1);
     }
 
     const restore = () => {
-        setNum(0);
+        setNum(n => n = 0);
     }
 
     return(

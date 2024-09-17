@@ -1,54 +1,39 @@
 body{
-  margin: 0;
-  padding: 0;
-}
-
-.card{
-  border:1px solid rgb(141, 140, 140);
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
-  padding: 20px;
-  margin: 10px auto;
-  max-width: 250px;
-  text-align: center;
-  display:block;  
-}
-
-.card .card-image {
-  max-width: 60%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.card .card-title{
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  color:hsla(0, 0%, 20%);
 }
 
-.card .card-text{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: hsl(0, 86%, 37%);
+.color-picker-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.student{
-  font-family: Arial, sans-serif;
-  font-size: 1.2rem;
-  padding: 10px;
-  border: 1px solid hsla(0, 0%, 50%, 0.8);
-  margin: 5px;
+h1{
+  margin:50px;
+  font-size: 3rem;
 }
 
-.student p{
-  margin: 5px;
+.color-display{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid hsl(0, 0%, 80%);
+  border-radius: 25px;
+  margin-bottom: 25px;
+  transition: 0.25s ease;
 }
-
-footer{
-  background-color: hsla(0, 0%, 50%, 0.8);
-  width: 100%;
-  position: fixed;
-  bottom: 0;
+.color-display p{
+  color: hsl(0,0%,20%);
+  font-size: 2rem;
   text-align: center;
 }
 
+input[type="color"]{
+  width: 75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px solid hsl(0, 0%,80%);
+}
