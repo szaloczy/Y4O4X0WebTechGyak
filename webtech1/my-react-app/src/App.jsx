@@ -1,7 +1,6 @@
 import Footer from './Footer'
 import Header from './Header/Header'
-import Counter from './Counter'
-import MyComponent4 from './MyComponent4';
+import ToDoList from './ToDoList';
 
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
   return(
     <>
     <Header></Header>
-    <MyComponent4></MyComponent4>
+    <ToDoList></ToDoList>
     <Footer></Footer>
     </>
   );
