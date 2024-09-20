@@ -1,14 +1,15 @@
 import Footer from './Footer';
 import Header from './Header/Header';
-import MyComponent6 from './MyComponent6';
-import DigitalClock from './DigitalClock/DigitalClock';
+import ComponentA from './ComponentA';
+import MyComponent7 from './MyComponent7';
+import Stopwatch from './Stopwatch';
 
 function App() {
 
   return(
     <>
     <Header></Header>
-    <DigitalClock></DigitalClock>
+    <Stopwatch></Stopwatch>
     <Footer></Footer>
     </>
   );
