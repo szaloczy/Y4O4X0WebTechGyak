@@ -1,19 +1,14 @@
-import Footer from './Footer'
-import Header from './Header/Header'
-import ToDoList from './ToDoList';
-
+import Footer from './Footer';
+import Header from './Header/Header';
+import MyComponent6 from './MyComponent6';
+import DigitalClock from './DigitalClock/DigitalClock';
 
 function App() {
-
-  const fruits = [{id:1, name:"orange", caleroies: 95},
-    {id:2, name:"apple", caleroies: 45}, 
-    {id:3, name:"banan", caleroies: 159},
-];
 
   return(
     <>
     <Header></Header>
-    <ToDoList></ToDoList>
+    <DigitalClock></DigitalClock>
     <Footer></Footer>
     </>
   );
